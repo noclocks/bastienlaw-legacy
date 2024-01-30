@@ -1,0 +1,18 @@
+/*
+ After Ninja Forms was updated to 3.6.34, the initialization started to fire on the DOMContentLoaded event,
+ but our lazy-loaded forms appeared on a page when this event was already fired.
+ So now we load the addEventListener wrapper below as an async script, along with the other lazy-loaded forms scripts,
+ e.g. front-end.js, and we call the initialization function manually.
+ */
+const oldDocumentAddEventListener = document.addEventListener;
+document.addEventListener = function () {
+	const [eventName, callback] = arguments;
+	// It's important to mention that the DOMContentLoaded event was already fired on the page
+	if (eventName && eventName === 'DOMContentLoaded') {
+		callback();
+		// Return the original addEventListener back
+		document.addEventListener = oldDocumentAddEventListener;
+		return;
+	}
+	oldDocumentAddEventListener.apply(document, arguments);
+}
