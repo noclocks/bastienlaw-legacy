@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
+
 <head>
     <style id="divi-style-parent-css"></style>
     <script type="text/javascript">
@@ -17,25 +18,25 @@
                         }
                     </script>
 
-            <script>
-                // source from: https://unpkg.com/web-vitals@3.3.1/dist/web-vitals.iife.js
-                var webVitals = function (e) { "use strict"; var n, t, r, i, o, a = -1, c = function (e) { addEventListener("pageshow", (function (n) { n.persisted && (a = n.timeStamp, e(n)) }), !0) }, u = function () { return window.performance && performance.getEntriesByType && performance.getEntriesByType("navigation")[0] }, s = function () { var e = u(); return e && e.activationStart || 0 }, f = function (e, n) { var t = u(), r = "navigate"; return a >= 0 ? r = "back-forward-cache" : t && (r = document.prerendering || s() > 0 ? "prerender" : document.wasDiscarded ? "restore" : t.type.replace(/_/g, "-")), { name: e, value: void 0 === n ? -1 : n, rating: "good", delta: 0, entries: [], id: "v3-".concat(Date.now(), "-").concat(Math.floor(8999999999999 * Math.random()) + 1e12), navigationType: r } }, d = function (e, n, t) { try { if (PerformanceObserver.supportedEntryTypes.includes(e)) { var r = new PerformanceObserver((function (e) { Promise.resolve().then((function () { n(e.getEntries()) })) })); return r.observe(Object.assign({ type: e, buffered: !0 }, t || {})), r } } catch (e) { } }, l = function (e, n, t, r) { var i, o; return function (a) { n.value >= 0 && (a || r) && ((o = n.value - (i || 0)) || void 0 === i) && (i = n.value, n.delta = o, n.rating = function (e, n) { return e > n[1] ? "poor" : e > n[0] ? "needs-improvement" : "good" }(n.value, t), e(n)) } }, v = function (e) { requestAnimationFrame((function () { return requestAnimationFrame((function () { return e() })) })) }, p = function (e) { var n = function (n) { "pagehide" !== n.type && "hidden" !== document.visibilityState || e(n) }; addEventListener("visibilitychange", n, !0), addEventListener("pagehide", n, !0) }, m = function (e) { var n = !1; return function (t) { n || (e(t), n = !0) } }, h = -1, g = function () { return "hidden" !== document.visibilityState || document.prerendering ? 1 / 0 : 0 }, T = function (e) { "hidden" === document.visibilityState && h > -1 && (h = "visibilitychange" === e.type ? e.timeStamp : 0, C()) }, y = function () { addEventListener("visibilitychange", T, !0), addEventListener("prerenderingchange", T, !0) }, C = function () { removeEventListener("visibilitychange", T, !0), removeEventListener("prerenderingchange", T, !0) }, E = function () { return h < 0 && (h = g(), y(), c((function () { setTimeout((function () { h = g(), y() }), 0) }))), { get firstHiddenTime() { return h } } }, L = function (e) { document.prerendering ? addEventListener("prerenderingchange", (function () { return e() }), !0) : e() }, b = [1800, 3e3], S = function (e, n) { n = n || {}, L((function () { var t, r = E(), i = f("FCP"), o = d("paint", (function (e) { e.forEach((function (e) { "first-contentful-paint" === e.name && (o.disconnect(), e.startTime < r.firstHiddenTime && (i.value = Math.max(e.startTime - s(), 0), i.entries.push(e), t(!0))) })) })); o && (t = l(e, i, b, n.reportAllChanges), c((function (r) { i = f("FCP"), t = l(e, i, b, n.reportAllChanges), v((function () { i.value = performance.now() - r.timeStamp, t(!0) })) }))) })) }, w = [.1, .25], P = function (e, n) { n = n || {}, S(m((function () { var t, r = f("CLS", 0), i = 0, o = [], a = function (e) { e.forEach((function (e) { if (!e.hadRecentInput) { var n = o[0], t = o[o.length - 1]; i && e.startTime - t.startTime < 1e3 && e.startTime - n.startTime < 5e3 ? (i += e.value, o.push(e)) : (i = e.value, o = [e]) } })), i > r.value && (r.value = i, r.entries = o, t()) }, u = d("layout-shift", a); u && (t = l(e, r, w, n.reportAllChanges), p((function () { a(u.takeRecords()), t(!0) })), c((function () { i = 0, r = f("CLS", 0), t = l(e, r, w, n.reportAllChanges), v((function () { return t() })) })), setTimeout(t, 0)) }))) }, F = { passive: !0, capture: !0 }, I = new Date, A = function (e, i) { n || (n = i, t = e, r = new Date, k(removeEventListener), M()) }, M = function () { if (t >= 0 && t < r - I) { var e = { entryType: "first-input", name: n.type, target: n.target, cancelable: n.cancelable, startTime: n.timeStamp, processingStart: n.timeStamp + t }; i.forEach((function (n) { n(e) })), i = [] } }, D = function (e) { if (e.cancelable) { var n = (e.timeStamp > 1e12 ? new Date : performance.now()) - e.timeStamp; "pointerdown" == e.type ? function (e, n) { var t = function () { A(e, n), i() }, r = function () { i() }, i = function () { removeEventListener("pointerup", t, F), removeEventListener("pointercancel", r, F) }; addEventListener("pointerup", t, F), addEventListener("pointercancel", r, F) }(n, e) : A(n, e) } }, k = function (e) { ["mousedown", "keydown", "touchstart", "pointerdown"].forEach((function (n) { return e(n, D, F) })) }, B = [100, 300], x = function (e, r) { r = r || {}, L((function () { var o, a = E(), u = f("FID"), s = function (e) { e.startTime < a.firstHiddenTime && (u.value = e.processingStart - e.startTime, u.entries.push(e), o(!0)) }, v = function (e) { e.forEach(s) }, h = d("first-input", v); o = l(e, u, B, r.reportAllChanges), h && p(m((function () { v(h.takeRecords()), h.disconnect() }))), h && c((function () { var a; u = f("FID"), o = l(e, u, B, r.reportAllChanges), i = [], t = -1, n = null, k(addEventListener), a = s, i.push(a), M() })) })) }, N = 0, R = 1 / 0, H = 0, O = function (e) { e.forEach((function (e) { e.interactionId && (R = Math.min(R, e.interactionId), H = Math.max(H, e.interactionId), N = H ? (H - R) / 7 + 1 : 0) })) }, _ = function () { return o ? N : performance.interactionCount || 0 }, j = function () { "interactionCount" in performance || o || (o = d("event", O, { type: "event", buffered: !0, durationThreshold: 0 })) }, q = [200, 500], V = 0, z = function () { return _() - V }, G = [], J = {}, K = function (e) { var n = G[G.length - 1], t = J[e.interactionId]; if (t || G.length < 10 || e.duration > n.latency) { if (t) t.entries.push(e), t.latency = Math.max(t.latency, e.duration); else { var r = { id: e.interactionId, latency: e.duration, entries: [e] }; J[r.id] = r, G.push(r) } G.sort((function (e, n) { return n.latency - e.latency })), G.splice(10).forEach((function (e) { delete J[e.id] })) } }, Q = function (e, n) { n = n || {}, L((function () { j(); var t, r = f("INP"), i = function (e) { e.forEach((function (e) { (e.interactionId && K(e), "first-input" === e.entryType) && (!G.some((function (n) { return n.entries.some((function (n) { return e.duration === n.duration && e.startTime === n.startTime })) })) && K(e)) })); var n, i = (n = Math.min(G.length - 1, Math.floor(z() / 50)), G[n]); i && i.latency !== r.value && (r.value = i.latency, r.entries = i.entries, t()) }, o = d("event", i, { durationThreshold: n.durationThreshold || 40 }); t = l(e, r, q, n.reportAllChanges), o && (o.observe({ type: "first-input", buffered: !0 }), p((function () { i(o.takeRecords()), r.value < 0 && z() > 0 && (r.value = 0, r.entries = []), t(!0) })), c((function () { G = [], V = _(), r = f("INP"), t = l(e, r, q, n.reportAllChanges) }))) })) }, U = [2500, 4e3], W = {}, X = function (e, n) { n = n || {}, L((function () { var t, r = E(), i = f("LCP"), o = function (e) { var n = e[e.length - 1]; n && n.startTime < r.firstHiddenTime && (i.value = Math.max(n.startTime - s(), 0), i.entries = [n], t()) }, a = d("largest-contentful-paint", o); if (a) { t = l(e, i, U, n.reportAllChanges); var u = m((function () { W[i.id] || (o(a.takeRecords()), a.disconnect(), W[i.id] = !0, t(!0)) }));["keydown", "click"].forEach((function (e) { addEventListener(e, u, !0) })), p(u), c((function (r) { i = f("LCP"), t = l(e, i, U, n.reportAllChanges), v((function () { i.value = performance.now() - r.timeStamp, W[i.id] = !0, t(!0) })) })) } })) }, Y = [800, 1800], Z = function e(n) { document.prerendering ? L((function () { return e(n) })) : "complete" !== document.readyState ? addEventListener("load", (function () { return e(n) }), !0) : setTimeout(n, 0) }, $ = function (e, n) { n = n || {}; var t = f("TTFB"), r = l(e, t, Y, n.reportAllChanges); Z((function () { var i = u(); if (i) { var o = i.responseStart; if (o <= 0 || o > performance.now()) return; t.value = Math.max(o - s(), 0), t.entries = [i], r(!0), c((function () { t = f("TTFB", 0), (r = l(e, t, Y, n.reportAllChanges))(!0) })) } })) }; return e.CLSThresholds = w, e.FCPThresholds = b, e.FIDThresholds = B, e.INPThresholds = q, e.LCPThresholds = U, e.TTFBThresholds = Y, e.getCLS = P, e.getFCP = S, e.getFID = x, e.getINP = Q, e.getLCP = X, e.getTTFB = $, e.onCLS = P, e.onFCP = S, e.onFID = x, e.onINP = Q, e.onLCP = X, e.onTTFB = $, Object.defineProperty(e, "__esModule", { value: !0 }), e }({});
-                window.webVitalsReport = [];
+    <script>
+        // source from: https://unpkg.com/web-vitals@3.3.1/dist/web-vitals.iife.js
+        var webVitals = function (e) { "use strict"; var n, t, r, i, o, a = -1, c = function (e) { addEventListener("pageshow", (function (n) { n.persisted && (a = n.timeStamp, e(n)) }), !0) }, u = function () { return window.performance && performance.getEntriesByType && performance.getEntriesByType("navigation")[0] }, s = function () { var e = u(); return e && e.activationStart || 0 }, f = function (e, n) { var t = u(), r = "navigate"; return a >= 0 ? r = "back-forward-cache" : t && (r = document.prerendering || s() > 0 ? "prerender" : document.wasDiscarded ? "restore" : t.type.replace(/_/g, "-")), { name: e, value: void 0 === n ? -1 : n, rating: "good", delta: 0, entries: [], id: "v3-".concat(Date.now(), "-").concat(Math.floor(8999999999999 * Math.random()) + 1e12), navigationType: r } }, d = function (e, n, t) { try { if (PerformanceObserver.supportedEntryTypes.includes(e)) { var r = new PerformanceObserver((function (e) { Promise.resolve().then((function () { n(e.getEntries()) })) })); return r.observe(Object.assign({ type: e, buffered: !0 }, t || {})), r } } catch (e) { } }, l = function (e, n, t, r) { var i, o; return function (a) { n.value >= 0 && (a || r) && ((o = n.value - (i || 0)) || void 0 === i) && (i = n.value, n.delta = o, n.rating = function (e, n) { return e > n[1] ? "poor" : e > n[0] ? "needs-improvement" : "good" }(n.value, t), e(n)) } }, v = function (e) { requestAnimationFrame((function () { return requestAnimationFrame((function () { return e() })) })) }, p = function (e) { var n = function (n) { "pagehide" !== n.type && "hidden" !== document.visibilityState || e(n) }; addEventListener("visibilitychange", n, !0), addEventListener("pagehide", n, !0) }, m = function (e) { var n = !1; return function (t) { n || (e(t), n = !0) } }, h = -1, g = function () { return "hidden" !== document.visibilityState || document.prerendering ? 1 / 0 : 0 }, T = function (e) { "hidden" === document.visibilityState && h > -1 && (h = "visibilitychange" === e.type ? e.timeStamp : 0, C()) }, y = function () { addEventListener("visibilitychange", T, !0), addEventListener("prerenderingchange", T, !0) }, C = function () { removeEventListener("visibilitychange", T, !0), removeEventListener("prerenderingchange", T, !0) }, E = function () { return h < 0 && (h = g(), y(), c((function () { setTimeout((function () { h = g(), y() }), 0) }))), { get firstHiddenTime() { return h } } }, L = function (e) { document.prerendering ? addEventListener("prerenderingchange", (function () { return e() }), !0) : e() }, b = [1800, 3e3], S = function (e, n) { n = n || {}, L((function () { var t, r = E(), i = f("FCP"), o = d("paint", (function (e) { e.forEach((function (e) { "first-contentful-paint" === e.name && (o.disconnect(), e.startTime < r.firstHiddenTime && (i.value = Math.max(e.startTime - s(), 0), i.entries.push(e), t(!0))) })) })); o && (t = l(e, i, b, n.reportAllChanges), c((function (r) { i = f("FCP"), t = l(e, i, b, n.reportAllChanges), v((function () { i.value = performance.now() - r.timeStamp, t(!0) })) }))) })) }, w = [.1, .25], P = function (e, n) { n = n || {}, S(m((function () { var t, r = f("CLS", 0), i = 0, o = [], a = function (e) { e.forEach((function (e) { if (!e.hadRecentInput) { var n = o[0], t = o[o.length - 1]; i && e.startTime - t.startTime < 1e3 && e.startTime - n.startTime < 5e3 ? (i += e.value, o.push(e)) : (i = e.value, o = [e]) } })), i > r.value && (r.value = i, r.entries = o, t()) }, u = d("layout-shift", a); u && (t = l(e, r, w, n.reportAllChanges), p((function () { a(u.takeRecords()), t(!0) })), c((function () { i = 0, r = f("CLS", 0), t = l(e, r, w, n.reportAllChanges), v((function () { return t() })) })), setTimeout(t, 0)) }))) }, F = { passive: !0, capture: !0 }, I = new Date, A = function (e, i) { n || (n = i, t = e, r = new Date, k(removeEventListener), M()) }, M = function () { if (t >= 0 && t < r - I) { var e = { entryType: "first-input", name: n.type, target: n.target, cancelable: n.cancelable, startTime: n.timeStamp, processingStart: n.timeStamp + t }; i.forEach((function (n) { n(e) })), i = [] } }, D = function (e) { if (e.cancelable) { var n = (e.timeStamp > 1e12 ? new Date : performance.now()) - e.timeStamp; "pointerdown" == e.type ? function (e, n) { var t = function () { A(e, n), i() }, r = function () { i() }, i = function () { removeEventListener("pointerup", t, F), removeEventListener("pointercancel", r, F) }; addEventListener("pointerup", t, F), addEventListener("pointercancel", r, F) }(n, e) : A(n, e) } }, k = function (e) { ["mousedown", "keydown", "touchstart", "pointerdown"].forEach((function (n) { return e(n, D, F) })) }, B = [100, 300], x = function (e, r) { r = r || {}, L((function () { var o, a = E(), u = f("FID"), s = function (e) { e.startTime < a.firstHiddenTime && (u.value = e.processingStart - e.startTime, u.entries.push(e), o(!0)) }, v = function (e) { e.forEach(s) }, h = d("first-input", v); o = l(e, u, B, r.reportAllChanges), h && p(m((function () { v(h.takeRecords()), h.disconnect() }))), h && c((function () { var a; u = f("FID"), o = l(e, u, B, r.reportAllChanges), i = [], t = -1, n = null, k(addEventListener), a = s, i.push(a), M() })) })) }, N = 0, R = 1 / 0, H = 0, O = function (e) { e.forEach((function (e) { e.interactionId && (R = Math.min(R, e.interactionId), H = Math.max(H, e.interactionId), N = H ? (H - R) / 7 + 1 : 0) })) }, _ = function () { return o ? N : performance.interactionCount || 0 }, j = function () { "interactionCount" in performance || o || (o = d("event", O, { type: "event", buffered: !0, durationThreshold: 0 })) }, q = [200, 500], V = 0, z = function () { return _() - V }, G = [], J = {}, K = function (e) { var n = G[G.length - 1], t = J[e.interactionId]; if (t || G.length < 10 || e.duration > n.latency) { if (t) t.entries.push(e), t.latency = Math.max(t.latency, e.duration); else { var r = { id: e.interactionId, latency: e.duration, entries: [e] }; J[r.id] = r, G.push(r) } G.sort((function (e, n) { return n.latency - e.latency })), G.splice(10).forEach((function (e) { delete J[e.id] })) } }, Q = function (e, n) { n = n || {}, L((function () { j(); var t, r = f("INP"), i = function (e) { e.forEach((function (e) { (e.interactionId && K(e), "first-input" === e.entryType) && (!G.some((function (n) { return n.entries.some((function (n) { return e.duration === n.duration && e.startTime === n.startTime })) })) && K(e)) })); var n, i = (n = Math.min(G.length - 1, Math.floor(z() / 50)), G[n]); i && i.latency !== r.value && (r.value = i.latency, r.entries = i.entries, t()) }, o = d("event", i, { durationThreshold: n.durationThreshold || 40 }); t = l(e, r, q, n.reportAllChanges), o && (o.observe({ type: "first-input", buffered: !0 }), p((function () { i(o.takeRecords()), r.value < 0 && z() > 0 && (r.value = 0, r.entries = []), t(!0) })), c((function () { G = [], V = _(), r = f("INP"), t = l(e, r, q, n.reportAllChanges) }))) })) }, U = [2500, 4e3], W = {}, X = function (e, n) { n = n || {}, L((function () { var t, r = E(), i = f("LCP"), o = function (e) { var n = e[e.length - 1]; n && n.startTime < r.firstHiddenTime && (i.value = Math.max(n.startTime - s(), 0), i.entries = [n], t()) }, a = d("largest-contentful-paint", o); if (a) { t = l(e, i, U, n.reportAllChanges); var u = m((function () { W[i.id] || (o(a.takeRecords()), a.disconnect(), W[i.id] = !0, t(!0)) }));["keydown", "click"].forEach((function (e) { addEventListener(e, u, !0) })), p(u), c((function (r) { i = f("LCP"), t = l(e, i, U, n.reportAllChanges), v((function () { i.value = performance.now() - r.timeStamp, W[i.id] = !0, t(!0) })) })) } })) }, Y = [800, 1800], Z = function e(n) { document.prerendering ? L((function () { return e(n) })) : "complete" !== document.readyState ? addEventListener("load", (function () { return e(n) }), !0) : setTimeout(n, 0) }, $ = function (e, n) { n = n || {}; var t = f("TTFB"), r = l(e, t, Y, n.reportAllChanges); Z((function () { var i = u(); if (i) { var o = i.responseStart; if (o <= 0 || o > performance.now()) return; t.value = Math.max(o - s(), 0), t.entries = [i], r(!0), c((function () { t = f("TTFB", 0), (r = l(e, t, Y, n.reportAllChanges))(!0) })) } })) }; return e.CLSThresholds = w, e.FCPThresholds = b, e.FIDThresholds = B, e.INPThresholds = q, e.LCPThresholds = U, e.TTFBThresholds = Y, e.getCLS = P, e.getFCP = S, e.getFID = x, e.getINP = Q, e.getLCP = X, e.getTTFB = $, e.onCLS = P, e.onFCP = S, e.onFID = x, e.onINP = Q, e.onLCP = X, e.onTTFB = $, Object.defineProperty(e, "__esModule", { value: !0 }), e }({});
+        window.webVitalsReport = [];
 
                 function captureVitals(obj) {
                     window.webVitalsReport.push(obj);
-                            if (typeof _satellite !== 'undefined') {
-                                _satellite.track('web-vitals-updated');
-                            }
-                        }
+                    if (typeof _satellite !== 'undefined') {
+                        _satellite.track('web-vitals-updated');
+                    }
+                }
 
-                        webVitals.getCLS(captureVitals);
-                        webVitals.getFID(captureVitals);
-                        webVitals.getLCP(captureVitals);
-                        webVitals.getFCP(captureVitals);
-                        webVitals.getTTFB(captureVitals);
-                        webVitals.getINP(captureVitals);
-                    </script>
+                webVitals.getCLS(captureVitals);
+                webVitals.getFID(captureVitals);
+                webVitals.getLCP(captureVitals);
+                webVitals.getFCP(captureVitals);
+                webVitals.getTTFB(captureVitals);
+                webVitals.getINP(captureVitals);
+            </script>
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -4036,7 +4037,7 @@
     <script>var FLDataLayer = { "cmsName": "fl-wordpress", "cmsEnvironment": "prod", "cmsServer": "findlaw3.flsitebuilder.com", "pageGoal": "goal4", "pageLanguage": "english", "pageType": "home", "practiceArea": "", "subPageType": "", "siteName": "3586907", "contentOrigination": "" };</script>
 
     <script>
-            var FLDataLayer = FLDataLayer || window.FLDataLayer ||                 FLDataLayer.geo = FLDataLayer.geo || {};
+                var FLDataLayer = FLDataLayer || window.FLDataLayer || FLDataLayer.geo = FLDataLayer.geo || {};
                 FLDataLayer.geo.cf_location = { "latitude": "33.78550", "longitude": "-84.36120", "city": "Atlanta", "postalCode": "30306", "region": "Georgia", "regionCode": "GA" };
                 FLDataLayer.visitor = FLDataLayer.visitor || {};
                 FLDataLayer.visitor.botType = 0;
@@ -4045,6 +4046,7 @@
                 FLDataLayer.pageViewId = '849782f015722449';
             </script>
 </head>
+
 <body
     class="home page-template-default page page-id-6 et-tb-has-template et-tb-has-header et-tb-has-footer  ENABLE_FIX_DISCLAIMER_ACCESSIBILITY ENABLE_DELAYED_OUTLINE_ELEMENT_FOCUS ENABLE_ACCESSIBLE_SEARCH_FORM ENABLE_UNDERLINE_BREADCRUMBS ENABLE_SLIDER_CONTROL_IMPROVEMENTS ENABLE_SLIDER_TAB_ORDER ENABLE_SLIDER_CONTROL_IMPROVEMENTS_DICA ENABLE_FIX_SOCIAL_MEDIA_BUTTONS site-builder page-home et_button_no_icon et_pb_button_helper_class et_cover_background et_pb_gutter et_pb_gutters1 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db">
     <div id="page-container">
@@ -4088,8 +4090,8 @@
                                                                 <li class="menu-item menu-item--depth-1"><a href="attorney/bastein-villard-s/index.htm" tabindex="0"
                                                                         data-wpel-link="internal">Villard
                                                                         S. Bastien</a></li>
-                                                                </ul>
-                                                                </li>
+                                                            </ul>
+                                                            </li>
                                                         <li class="menu-item menu-item-has-children menu-item--depth-0">
                                                             <a tabindex="0">Practice Areas</a>
                                                             <ul class="sub-menu">
@@ -4110,25 +4112,25 @@
                                                                         <li class="menu-item menu-item--depth-2"><a href="serious-injury/index.htm" tabindex="0"
                                                                                 data-wpel-link="internal">Serious
                                                                                 Injury</a></li>
-                                                                        </ul>
-                                                                        </li>
-                                                                        </ul>
-                                                                        </li>
+                                                                    </ul>
+                                                                    </li>
+                                                                    </ul>
+                                                                    </li>
                                                         <li class="menu-item menu-item--depth-0"><a href="contact/index.htm" tabindex="0" data-wpel-link="internal">Contact</a>
                                                         </li>
-                                                        </ul>
-                                                        </nav>
+                                                    </ul>
+                                                    </nav>
+                                                    </div>
+                                                    <div class="et_mobile_nav_menu">
+                                                        <div class="mobile_nav closed">
+                                                            <span class="mobile_menu_bar"></span>
                                                         </div>
-                                                        <div class="et_mobile_nav_menu">
-                                                            <div class="mobile_nav closed">
-                                                                <span class="mobile_menu_bar"></span>
-                                                            </div>
-                                                        </div>
-                                                        </div>
-                                                        </div>
-                                                        </div>
-                                                        </div>
-                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    </div>
                     </div>
                     <div id="fl-template"
                         class="et_pb_section et_pb_section_1_tb_header fl-template fl-template1 et_section_regular et_pb_section--with-menu">
@@ -4150,8 +4152,8 @@
                                                                 <li class="menu-item menu-item--depth-1"><a href="attorney/bastein-villard-s/index.htm" tabindex="0"
                                                                         data-wpel-link="internal">Villard
                                                                         S. Bastien</a></li>
-                                                                </ul>
-                                                                </li>
+                                                            </ul>
+                                                            </li>
                                                         <li class="menu-item menu-item-has-children menu-item--depth-0">
                                                             <a tabindex="0">Practice Areas</a>
                                                             <ul class="sub-menu">
@@ -4172,22 +4174,22 @@
                                                                         <li class="menu-item menu-item--depth-2"><a href="serious-injury/index.htm" tabindex="0"
                                                                                 data-wpel-link="internal">Serious
                                                                                 Injury</a></li>
-                                                                        </ul>
-                                                                        </li>
-                                                                        </ul>
-                                                                        </li>
+                                                                    </ul>
+                                                                    </li>
+                                                                    </ul>
+                                                                    </li>
                                                         <li class="menu-item menu-item--depth-0"><a href="contact/index.htm" tabindex="0" data-wpel-link="internal">Contact</a>
                                                         </li>
-                                                        </ul>
-                                                        </nav>
+                                                    </ul>
+                                                    </nav>
+                                                    </div>
+                                                    <div class="et_mobile_nav_menu">
+                                                        <div class="mobile_nav closed">
+                                                            <span class="mobile_menu_bar"></span>
                                                         </div>
-                                                        <div class="et_mobile_nav_menu">
-                                                            <div class="mobile_nav closed">
-                                                                <span class="mobile_menu_bar"></span>
-                                                            </div>
-                                                        </div>
-                                                        </div>
-                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    </div>
                                 </div>
                                 <div class="et_pb_button_module_wrapper et_pb_button_0_tb_header_wrapper et_pb_button_alignment_center et_pb_module ">
                                     <a class="et_pb_button et_pb_button_0_tb_header fl-3-column fl-cta-button fl-email-btn et_pb_bg_layout_light"
@@ -4196,7 +4198,8 @@
                                 <div
                                     class="et_pb_module et_pb_text et_pb_text_2_tb_header fl-3-column et_pb_section_video_on_hover  et_pb_text_align_center et_pb_bg_layout_light">
                                     <div class="et_pb_text_inner"><span class="et-pb-icon fl-phone-icon"></span> <span
-                                            class="nap-item nap-item--phone"><a href="tel:+1-404-865-1952" data-wpel-link="internal">Call</a></span>
+                                            class="nap-item nap-item--phone"><a href="tel:+1-404-865-1952"
+                                                data-wpel-link="internal">Call</a></span>
                                     </div>
                                 </div>
                                 <div class="et_pb_module et_pb_code et_pb_code_0_tb_header">
@@ -4208,45 +4211,44 @@
                                 <div class="et_pb_module et_pb_code et_pb_code_1_tb_header">
                                     <div class="et_pb_code_inner"></div>
                                 </div>
-                                </div>
-                                </div>
+                            </div>
+                            </div>
                     </div>
-                    </div>
-                    </header>
-                    <div id="et-main-area">
-                        <div id="main-content">
-                            <article id="post-6" class="post-6 page type-page status-publish hentry">
-                                <div class="entry-content">
-                                    <div class="et-l et-l--post">
-                                        <div class="et_builder_inner_content et_pb_gutters1">
-                                            <div
-                                                class="et_pb_section et_pb_section_0 fl-home-sec-1 et_pb_with_background et_section_regular">
-                                                <div class="et_pb_with_border et_pb_row et_pb_row_0">
+                </div>
+                </header>
+                <div id="et-main-area">
+                    <div id="main-content">
+                        <article id="post-6" class="post-6 page type-page status-publish hentry">
+                            <div class="entry-content">
+                                <div class="et-l et-l--post">
+                                    <div class="et_builder_inner_content et_pb_gutters1">
+                                        <div
+                                            class="et_pb_section et_pb_section_0 fl-home-sec-1 et_pb_with_background et_section_regular">
+                                            <div class="et_pb_with_border et_pb_row et_pb_row_0">
+                                                <div
+                                                    class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
                                                     <div
-                                                        class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
-                                                        <div
-                                                            class="et_pb_module et_pb_text et_pb_text_0 fl-margin-bottom  et_pb_text_align_center et_pb_bg_layout_light">
+                                                        class="et_pb_module et_pb_text et_pb_text_0 fl-margin-bottom  et_pb_text_align_center et_pb_bg_layout_light">
                                                     <div class="et_pb_text_inner"
                                                         data-et-multi-view="{&quot;schema&quot;:{&quot;content&quot;:{&quot;desktop&quot;:&quot;&lt;p class=\&quot;fl-home-banner-text\&quot;&gt;A Dedicated Attorney&lt;br \/&gt;Who Is On Your Side&lt;\/p&gt;&quot;,&quot;tablet&quot;:&quot;&lt;p class=\&quot;fl-home-banner-text\&quot;&gt;A Dedicated Attorney Who Is On Your Side&lt;\/p&gt;&quot;}},&quot;slug&quot;:&quot;et_pb_text&quot;}"
                                                         data-et-multi-view-load-tablet-hidden="true">
                                                         <p class="fl-home-banner-text">A Dedicated Attorney<br>Who Is On
                                                             Your Side</p>
                                                     </div>
+                                                </div>
+                                                <div class="et_pb_module et_pb_text et_pb_text_1 fl-margin-bottom  et_pb_text_align_center et_pb_bg_layout_light">
+                                                    <div class="et_pb_text_inner">
+                                                        <p>For over two decades, I’ve combined my passion for fair
+                                                            advocacy with innovative solutions and sharp negotiating
+                                                            skills. At the <span class="nap-item nap-item--name">Law
+                                                                Offices of Villard Bastien, LLC</span>, I will be your
+                                                            champion.</p>
                                                     </div>
-                                                    <div class="et_pb_module et_pb_text et_pb_text_1 fl-margin-bottom  et_pb_text_align_center et_pb_bg_layout_light">
-                                                        <div class="et_pb_text_inner">
-                                                            <p>For over two decades, I’ve combined my passion for fair
-                                                                advocacy with innovative solutions and sharp negotiating
-                                                                skills. At the <span class="nap-item nap-item--name">Law
-                                                                    Offices of Villard Bastien, LLC</span>, I will be your
-                                                                champion.</p>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_center et_pb_button_alignment_tablet_center et_pb_module ">
-                                                        <a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light" href="contact/index.htm"
-                                                            data-wpel-link="internal">Contact
-                                                            Today</a>
+                                                </div>
+                                                <div
+                                                    class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_center et_pb_button_alignment_tablet_center et_pb_module ">
+                                                    <a class="et_pb_button et_pb_button_0 et_pb_bg_layout_light" href="contact/index.htm" data-wpel-link="internal">Contact
+                                                        Today</a>
                                                     </div>
                                                     </div>
                                                     </div>
@@ -4260,13 +4262,13 @@
                                                         <p>Fighting for clients throughout Atlanta, Georgia, with
                                                             compassion and tenacity</p>
                                                     </div>
-                                                    </div>
-                                                    </div>
+                                                </div>
+                                                </div>
                                         </div>
-                                        </div>
-                                        <div class="et_pb_section et_pb_section_2 content-section fl-home-sec-4 et_pb_with_background et_section_regular">
-                                            <div class="et_pb_row et_pb_row_2">
-                                                <div class="et_pb_column et_pb_column_1_2 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough">
+                                    </div>
+                                    <div class="et_pb_section et_pb_section_2 content-section fl-home-sec-4 et_pb_with_background et_section_regular">
+                                        <div class="et_pb_row et_pb_row_2">
+                                            <div class="et_pb_column et_pb_column_1_2 et_pb_column_2  et_pb_css_mix_blend_mode_passthrough">
                                                 <div
                                                     class="et_pb_module et_pb_text et_pb_text_3 fl-margin-bottom  et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_light">
                                                     <div class="et_pb_text_inner">
@@ -4285,17 +4287,17 @@
                                                             initially. </p>
                                                     </div>
                                                 </div>
-                                                </div>
+                                            </div>
                                             <div class="et_pb_column et_pb_column_1_2 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough et-last-child">
                                                 <div class="et_pb_module et_pb_image et_pb_image_0">
                                                     <span class="et_pb_image_wrap has-box-shadow-overlay">
                                                         <div class="box-shadow-overlay"></div><img decoding="async"
-                                                            src="wp-content/uploads/sites/1302270/2021/06/nursing.jpg" alt="" title="" width="650" height="477"
-                                                            loading="lazy">
+                                                            src="wp-content/uploads/sites/1302270/2021/06/nursing.jpg"
+                                                            alt="" title="" width="650" height="477" loading="lazy">
                                                     </span>
-                                                    </div>
-                                                    </div>
-                                                    </div>
+                                                </div>
+                                                </div>
+                                                </div>
                                     </div>
                                     <div class="et_pb_section et_pb_section_3 fl-home-sec-3 et_pb_with_background et_section_regular">
                                         <div class="et_pb_row et_pb_row_3">
@@ -4304,212 +4306,226 @@
                                                     <div class="et_pb_text_inner">
                                                         <h2>Practice Areas</h2>
                                                     </div>
-                                                    </div>
+                                                </div>
                                             </div>
-                                            </div>
-                                            <div class="et_pb_row et_pb_row_4 fl-practice-area-blurb fl-ada-tab-fix et_pb_equal_columns et_pb_gutters2">
-                                                <div class="et_pb_column et_pb_column_1_3 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough">
-                                                    <div
-                                                        class="et_pb_with_border et_pb_module et_pb_blurb_extended et_pb_blurb_extended_0 practice-blurb fl-margin-bottom et_clickable  et_pb_text_align_center et_pb_section_video_on_hover">
-                                                        <div class="et_pb_module_inner">
-                                                            <div class="et_pb_blurb_position_top image_card use-image et_pb_bg_layout_light" data-blurb-position="top">
-                                                                <div class="et_pb_blurb_content">
-                                                                    <div class="et_pb_blurb_container">
+                                        </div>
+                                        <div class="et_pb_row et_pb_row_4 fl-practice-area-blurb fl-ada-tab-fix et_pb_equal_columns et_pb_gutters2">
+                                            <a href="nursing-home-abuse/index.htm">
+                                            <div class="et_pb_column et_pb_column_1_3 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough">
+                                                <div
+                                                    class="et_pb_with_border et_pb_module et_pb_blurb_extended et_pb_blurb_extended_0 practice-blurb fl-margin-bottom et_clickable  et_pb_text_align_center et_pb_section_video_on_hover">
+                                                    <div class="et_pb_module_inner">
+                                                        <div class="et_pb_blurb_position_top image_card use-image et_pb_bg_layout_light" data-blurb-position="top">
+                                                            <div class="et_pb_blurb_content">
+                                                                <div class="et_pb_blurb_container">
                                                                     <span class="card-icon"><img decoding="async" src="wp-content/uploads/sites/1302270/2021/06/icon1.png"
                                                                             alt="Nursing Home Abuse" class="et-waypoint et_pb_animation_top" width="79" height="80" loading="lazy"></span>
                                                                     <div class="et_pb_blurb_description">
                                                                         <p>Nursing Home Abuse</p>
                                                                     </div>
-                                                                    </div>
-                                                                    </div>
-                                                                    </div>
+                                                                </div>
+                                                                </div>
+                                                                </div>
 
                                                     </div>
-                                                    </div>
+                                                </div>
                                             </div>
+                                            </a>
                                             <div class="et_pb_column et_pb_column_1_3 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough">
-                                                <div
-                                                    class="et_pb_module et_pb_blurb_extended et_pb_blurb_extended_1 practice-blurb fl-margin-bottom et_clickable  et_pb_text_align_center et_pb_section_video_on_hover">
-                                                    <div class="et_pb_module_inner">
-                                                        <div class="et_pb_blurb_position_top image_card use-image et_pb_bg_layout_light" data-blurb-position="top">
-                                                            <div class="et_pb_blurb_content">
-                                                                <div class="et_pb_blurb_container">
-                                                                    <span class="card-icon">
-                                                                        <a href="other-practice-areas/index.htm">
-                                                                            <img decoding="async" src="wp-content/uploads/sites/1302270/2021/06/icon2.png" alt="Other Areas Of Practice"
-                                                                                class="et-waypoint et_pb_animation_top" width="91" height="80"></a></span>
-                                                                    <div class="et_pb_blurb_description">
-                                                                        <p>Other Areas Of Practice</p>
-                                                                    </div>
-                                                                    </div>
-                                                                    </div>
-                                                                    </div>
+                                                <a href="other-practice-areas/index.htm">
+                                                    <div
+                                                        class="et_pb_module et_pb_blurb_extended et_pb_blurb_extended_1 practice-blurb fl-margin-bottom et_clickable  et_pb_text_align_center et_pb_section_video_on_hover">
+                                                        <div class="et_pb_module_inner">
+                                                            <div class="et_pb_blurb_position_top image_card use-image et_pb_bg_layout_light" data-blurb-position="top">
+                                                                <div class="et_pb_blurb_content">
+                                                                    <div class="et_pb_blurb_container">
+                                                                        <span class="card-icon">
+<img decoding="async" src="wp-content/uploads/sites/1302270/2021/06/icon2.png" alt="Other Areas Of Practice"
+    class="et-waypoint et_pb_animation_top" width="91" height="80">
+</span>
+<div class="et_pb_blurb_description">
+    <p>Other Areas Of Practice</p>
+</div>
+</div>
+</div>
+</div>
 
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="et_pb_column et_pb_column_1_3 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                            <a href="about/index.htm">
+                                <div
+                                    class="et_pb_with_border et_pb_module et_pb_blurb_extended et_pb_blurb_extended_2 practice-blurb fl-margin-bottom et_clickable  et_pb_text_align_center et_pb_section_video_on_hover">
+                                    <div class="et_pb_module_inner">
+                                        <div class="et_pb_blurb_position_top image_card use-image et_pb_bg_layout_light" data-blurb-position="top">
+                                            <div class="et_pb_blurb_content">
+                                                <div class="et_pb_blurb_container">
+                                                    <span class="card-icon"><img decoding="async"
+                                                            src="wp-content/uploads/sites/1302270/2021/06/icon3.png" alt="About My Firm"
+                                                            class="et-waypoint et_pb_animation_top" width="86" height="80" loading="lazy"></span>
+                                                    <div class="et_pb_blurb_description">
+                                                        <p>About My Firm</p>
                                                     </div>
-                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="et_pb_column et_pb_column_1_3 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough et-last-child">
-                                                <div
-                                                    class="et_pb_with_border et_pb_module et_pb_blurb_extended et_pb_blurb_extended_2 practice-blurb fl-margin-bottom et_clickable  et_pb_text_align_center et_pb_section_video_on_hover">
-                                                    <div class="et_pb_module_inner">
-                                                        <div class="et_pb_blurb_position_top image_card use-image et_pb_bg_layout_light" data-blurb-position="top">
-                                                            <div class="et_pb_blurb_content">
-                                                                <div class="et_pb_blurb_container">
-                                                                    <span class="card-icon"><img decoding="async" src="wp-content/uploads/sites/1302270/2021/06/icon3.png"
-                                                                            alt="About My Firm" class="et-waypoint et_pb_animation_top" width="86" height="80" loading="lazy"></span>
-                                                                    <div class="et_pb_blurb_description">
-                                                                        <p>About My Firm</p>
-                                                                    </div>
-                                                                    </div>
-                                                                    </div>
-                                                                    </div>
+                                        </div>
 
-                                                    </div>
-                                                    </div>
-                                                    </div>
-                                                    </div>
                                     </div>
-                                    <div class="et_pb_section et_pb_section_4 content-3 fl-home-sec-5 et_pb_with_background et_section_regular">
-                                        <div class="et_pb_row et_pb_row_5 fl-ada-tab-fix et_pb_equal_columns">
-                                            <div class="et_pb_column et_pb_column_1_3 et_pb_column_8  et_pb_css_mix_blend_mode_passthrough">
-                                                <div
-                                                    class="et_pb_module et_pb_blurb et_pb_blurb_0 attorney-blurb fl-margin-bottom et_clickable et_pb_section_video_on_hover  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_dark">
-                                                    <div class="et_pb_blurb_content">
-                                                        <div class="et_pb_main_blurb_image"><a href="attorney/bastein-villard-s/index.htm" data-wpel-link="internal"><span
-                                                                    class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img decoding="async"
-                                                                        src="wp-content/uploads/sites/1302270/2022/06/Villard-S-Bastein.jpg" alt="Photo of Villard S. Bastein"
-                                                                        class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone" width="267"
-                                                                        height="267" loading="lazy"></span></a></div>
-                                                        <div class="et_pb_blurb_container">
-                                                            <div class="et_pb_blurb_description">
-                                                                <p>Villard S. Bastein</p>
-                                                            </div>
-                                                            </div>
-                                                            </div>
-                                                            </div>
-                                                            </div>
-                                            <div class="et_pb_column et_pb_column_2_3 et_pb_column_9  et_pb_css_mix_blend_mode_passthrough et-last-child">
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_5 fl-margin-bottom  et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_light">
-                                                    <div class="et_pb_text_inner">
-                                                        <h2>Compassionate Help After Unexpected Loss </h2>
-                                                        <p>When an unexpected accident leads to death, you may be left
-                                                            with more questions than answers. Paying for medical bills,
-                                                            funeral costs, property damage and other expenses related to
-                                                            the accident can seem like unsurmountable challenges during
-                                                            an already difficult time. I can help. My name is Villard
-                                                            Bastien, and I’m passionate about guiding people to a place
-                                                            of financial stability while they cope with incomparable
-                                                            loss. I understand how devastating the death of a loved one
-                                                            can be, and I will use my compassionate and knowledgeable
-                                                            guidance to help you move forward. </p>
-                                                    </div>
-                                                    </div>
-                                            </div>
-                                            </div>
-                                            </div>
-                                    <div class="et_pb_section et_pb_section_5 content-3 fl-home-sec-6 et_pb_with_background et_section_regular">
-                                        <div class="et_pb_row et_pb_row_6 et_pb_equal_columns">
-                                            <div class="et_pb_column et_pb_column_4_4 et_pb_column_10  et_pb_css_mix_blend_mode_passthrough et-last-child">
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_6 fl-margin-bottom  et_pb_text_align_center et_pb_bg_layout_light">
-                                                    <div class="et_pb_text_inner">
-                                                        <h2>Thorough Protection From A Passionate Advocate</h2>
-                                                        <p>At the <span class="nap-item nap-item--name">Law Offices of
-                                                                Villard Bastien, LLC</span>, I strive to give every
-                                                            client the personalized solutions they deserve. Many
-                                                            attorneys will provide cookie-cutter answers to complicated
-                                                            legal issues that could affect your life for many years in
-                                                            the future. I want to ensure you have answers that will
-                                                            bring your legal struggles to an end.</p>
-                                                        <p>Prior to practicing law, I worked in the claims department of
-                                                            State Farm Insurance Company, which means I have a unique
-                                                            perspective on personal injury cases. I know how the other
-                                                            side will build their defense, and I know how to fight them.
-                                                            I also have over two decades of experience representing
-                                                            clients, and I’m an active member of my local and legal
-                                                            communities.</p>
-                                                        <p>I will look at your case from every angle and protect you at
-                                                            every opportunity. Call my office today at <span class="nap-item nap-item--phone"><a href="tel:+1-404-865-1952"
-                                                                    data-wpel-link="internal">404-865-1952</a></span> to
-                                                            get started.</p>
-                                                    </div>
-                                                    </div>
-                                                    </div>
-                                                    </div>
-                                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                </a>
+            </div>
+            <div class="et_pb_section et_pb_section_4 content-3 fl-home-sec-5 et_pb_with_background et_section_regular">
+                <div class="et_pb_row et_pb_row_5 fl-ada-tab-fix et_pb_equal_columns">
+                    <div class="et_pb_column et_pb_column_1_3 et_pb_column_8  et_pb_css_mix_blend_mode_passthrough">
+                        <div
+                            class="et_pb_module et_pb_blurb et_pb_blurb_0 attorney-blurb fl-margin-bottom et_clickable et_pb_section_video_on_hover  et_pb_text_align_center  et_pb_blurb_position_top et_pb_bg_layout_dark">
+                            <div class="et_pb_blurb_content">
+                                <div class="et_pb_main_blurb_image"><a href="attorney/bastein-villard-s/index.htm"
+                                        data-wpel-link="internal"><span class="et_pb_image_wrap et_pb_only_image_mode_wrap"><img
+                                                decoding="async"
+                                                src="wp-content/uploads/sites/1302270/2022/06/Villard-S-Bastein.jpg"
+                                                alt="Photo of Villard S. Bastein"
+                                                class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone"
+                                                width="267" height="267" loading="lazy"></span></a></div>
+                                <div class="et_pb_blurb_container">
+                                    <div class="et_pb_blurb_description">
+                                        <p>Villard S. Bastein</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="et_pb_column et_pb_column_2_3 et_pb_column_9  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                        <div
+                            class="et_pb_module et_pb_text et_pb_text_5 fl-margin-bottom  et_pb_text_align_left et_pb_text_align_center-tablet et_pb_bg_layout_light">
+                            <div class="et_pb_text_inner">
+                                <h2>Compassionate Help After Unexpected Loss </h2>
+                                <p>When an unexpected accident leads to death, you may be left
+                                    with more questions than answers. Paying for medical bills,
+                                    funeral costs, property damage and other expenses related to
+                                    the accident can seem like unsurmountable challenges during
+                                    an already difficult time. I can help. My name is Villard
+                                    Bastien, and I’m passionate about guiding people to a place
+                                    of financial stability while they cope with incomparable
+                                    loss. I understand how devastating the death of a loved one
+                                    can be, and I will use my compassionate and knowledgeable
+                                    guidance to help you move forward. </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="et_pb_section et_pb_section_5 content-3 fl-home-sec-6 et_pb_with_background et_section_regular">
+                        <div class="et_pb_row et_pb_row_6 et_pb_equal_columns">
+                    <div class="et_pb_column et_pb_column_4_4 et_pb_column_10  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                        <div class="et_pb_module et_pb_text et_pb_text_6 fl-margin-bottom  et_pb_text_align_center et_pb_bg_layout_light">
+                            <div class="et_pb_text_inner">
+                                <h2>Thorough Protection From A Passionate Advocate</h2>
+                                <p>At the <span class="nap-item nap-item--name">Law Offices of
+                                        Villard Bastien, LLC</span>, I strive to give every
+                                    client the personalized solutions they deserve. Many
+                                    attorneys will provide cookie-cutter answers to complicated
+                                    legal issues that could affect your life for many years in
+                                    the future. I want to ensure you have answers that will
+                                    bring your legal struggles to an end.</p>
+                                <p>Prior to practicing law, I worked in the claims department of
+                                    State Farm Insurance Company, which means I have a unique
+                                    perspective on personal injury cases. I know how the other
+                                    side will build their defense, and I know how to fight them.
+                                    I also have over two decades of experience representing
+                                    clients, and I’m an active member of my local and legal
+                                    communities.</p>
+                                <p>I will look at your case from every angle and protect you at
+                                    every opportunity. Call my office today at <span class="nap-item nap-item--phone"><a
+                                            href="tel:+1-404-865-1952"
+                                            data-wpel-link="internal">404-865-1952</a></span>
+                                    to
+                                    get started.</p>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
                                     <div class="et_pb_section et_pb_section_6 fl-home-sec-7 et_pb_with_background et_section_regular">
                                         <div class="et_pb_row et_pb_row_7">
-                                            <div class="et_pb_column et_pb_column_4_4 et_pb_column_11  et_pb_css_mix_blend_mode_passthrough et-last-child">
-                                                <div
-                                                    class="et_pb_module et_pb_text et_pb_text_7 fl-margin-bottom  et_pb_text_align_center et_pb_bg_layout_light">
-                                                    <div class="et_pb_text_inner">
-                                                        <p>Let me be your champion to fight legal issues and injustice.
-                                                        </p>
-                                                    </div>
-                                                    </div>
-                                                    </div>
-                                        </div>
-                                        </div>
-                                        </div>
-                                        </div>
-                                        </div>
-                                        </article>
-                                        </div>
-                                        <footer class="et-l et-l--footer">
-                                            <div class="et_builder_inner_content et_pb_gutters1">
-                                                <div
-                                                    class="et_pb_section et_pb_section_0_tb_footer fl-short-form-section et_pb_with_background et_section_regular">
-                                                    <div class="et_pb_row et_pb_row_0_tb_footer">
-                                                        <div
-                                                            class="et_pb_column et_pb_column_4_4 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
-                                    <div
-                                        class="et_pb_module et_pb_text et_pb_text_0_tb_footer fl-short-form  et_pb_text_align_center et_pb_bg_layout_light">
-                                        <div class="et_pb_text_inner">
-                                            <h2>How Can I Help You?</h2>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="et_pb_module et_pb_text et_pb_text_1_tb_footer fl-darklinks fl-short-form  et_pb_text_align_left et_pb_bg_layout_dark">
-                                        <div class="et_pb_text_inner">
-                                            <div id="nf_tp_module_0" class="nf_tp_module" data-form_id="2" data-nf_tp_num="0" data-redirect_id="0">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                        <div class="et_pb_section et_pb_section_1_tb_footer et_pb_with_background et_section_regular">
-                            <div class="et_pb_row et_pb_row_1_tb_footer et_pb_equal_columns">
+                    <div class="et_pb_column et_pb_column_4_4 et_pb_column_11  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                        <div class="et_pb_module et_pb_text et_pb_text_7 fl-margin-bottom  et_pb_text_align_center et_pb_bg_layout_light">
+                            <div class="et_pb_text_inner">
+                                <p>Let me be your champion to fight legal issues and injustice.
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </article>
+                        </div>
+                        <footer class="et-l et-l--footer">
+                            <div class="et_builder_inner_content et_pb_gutters1">
                                 <div
-                                    class="et_pb_column et_pb_column_4_4 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
-                                    <div class="et_pb_module et_pb_text et_pb_text_2_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
-                                        <div class="et_pb_text_inner">
-                                            <h2>Contact The Firm</h2>
-                                        </div>
-                                        </div>
-                                </div>
-                                </div>
-                                <div id="contactform" class="et_pb_row et_pb_row_2_tb_footer et_pb_equal_columns">
-                                    <div class="et_pb_column et_pb_column_1_3 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+                                    class="et_pb_section et_pb_section_0_tb_footer fl-short-form-section et_pb_with_background et_section_regular">
+                                    <div class="et_pb_row et_pb_row_0_tb_footer">
                                         <div
-                                            class="et_pb_module et_pb_text et_pb_text_3_tb_footer fl-margin-bottom  et_pb_text_align_center et_pb_bg_layout_light">
-                                            <div class="et_pb_text_inner">
-                                                <h3>Office Location</h3>
-                                                <span class="nap-item nap-item--address">200 Ashford Center N<br>Ste
-                                                    215<br>Atlanta, GA 30338</span>
+                                            class="et_pb_column et_pb_column_4_4 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_0_tb_footer fl-short-form  et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h2>How Can I Help You?</h2>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_1_tb_footer fl-darklinks fl-short-form  et_pb_text_align_left et_pb_bg_layout_dark">
+                                                <div class="et_pb_text_inner">
+                                                    <div id="nf_tp_module_0" class="nf_tp_module" data-form_id="2" data-nf_tp_num="0"
+                                                        data-redirect_id="0">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="et_pb_section et_pb_section_1_tb_footer et_pb_with_background et_section_regular">
+                                    <div class="et_pb_row et_pb_row_1_tb_footer et_pb_equal_columns">
+                                        <div
+                                            class="et_pb_column et_pb_column_4_4 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_2_tb_footer  et_pb_text_align_left et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h2>Contact The Firm</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="contactform" class="et_pb_row et_pb_row_2_tb_footer et_pb_equal_columns">
+                                        <div
+                                            class="et_pb_column et_pb_column_1_3 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+                                            <div
+                                                class="et_pb_module et_pb_text et_pb_text_3_tb_footer fl-margin-bottom  et_pb_text_align_center et_pb_bg_layout_light">
+                                                <div class="et_pb_text_inner">
+                                                    <h3>Office Location</h3>
+                                                    <span class="nap-item nap-item--address">200 Ashford Center N<br>Ste
+                                                        215<br>Atlanta, GA 30338</span>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div
                                             class="et_pb_with_border et_pb_column_1_3 et_pb_column et_pb_column_3_tb_footer  et_pb_css_mix_blend_mode_passthrough">
                                             <div class="et_pb_module et_pb_image et_pb_image_0_tb_footer">
-                                        <a href="index.htm" data-wpel-link="internal"><span class="et_pb_image_wrap "><img decoding="async"
-                                                    src="wp-content/uploads/sites/1302270/2021/06/logo.jpg" alt="Law Offices of Villard Bastien, LLC" title=""
-                                                    width="500" height="111" loading="lazy"></span></a>
+                                                <a href="index.htm" data-wpel-link="internal"><span class="et_pb_image_wrap "><img
+                                                            decoding="async" src="wp-content/uploads/sites/1302270/2021/06/logo.jpg"
+                                                            alt="Law Offices of Villard Bastien, LLC" title="" width="500" height="111"
+                                                            loading="lazy"></span></a>
+                                            </div>
                                         </div>
-                                        </div>
-                                        <div class="et_pb_column et_pb_column_1_3 et_pb_column_4_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                                        <div
+                                            class="et_pb_column et_pb_column_1_3 et_pb_column_4_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
                                             <div
                                                 class="et_pb_module et_pb_text et_pb_text_4_tb_footer fl-darklinks fl-margin-bottom  et_pb_text_align_center et_pb_bg_layout_light">
                                                 <div class="et_pb_text_inner">
@@ -4522,43 +4538,45 @@
                                             <div
                                                 class="et_pb_button_module_wrapper et_pb_button_1_tb_footer_wrapper et_pb_button_alignment_center et_pb_module ">
                                                 <a class="et_pb_button et_pb_button_1_tb_footer et_pb_bg_layout_dark"
-                                                    href="atlanta-medical-malpractice-law-office/index.htm" data-wpel-link="internal">Atlanta Office</a>
-                                            </div>
-                                </div>
-                                </div>
-                            <div class="et_pb_row et_pb_row_3_tb_footer">
-                                <div
-                                    class="et_pb_column et_pb_column_4_4 et_pb_column_5_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
-                                    <div
-                                        class="et_pb_module et_pb_text et_pb_text_5_tb_footer fl-darklinks fl-margin-bottom  et_pb_text_align_left et_pb_bg_layout_light">
-                                        <div class="et_pb_text_inner">
-                                            <div class="default-footer">
-                                                <div class="flfooterbrand">
-                                                    <p style="text-align: center;">&copy; 2024 <a href="https://lawyers.findlaw.com/profile/view/4438170_1" target="_blank"
-                                                            data-wpel-link="external" rel="noopener noreferrer">Law Offices of Villard Bastien,
-                                                            LLC</a> • All Rights Reserved</p>
-                                                    </div>
-                                                    <div class="flfooterlink">
-                                                    <p style="text-align: center;"><a href="disclaimer/index.htm" data-wpel-link="internal">Disclaimer</a> | <a
-                                                            href="site-map/index.htm" data-wpel-link="internal">Site
-                                                            Map</a> | <a href="privacy/index.htm" data-wpel-link="internal">Privacy Policy</a> | <a
-                                                            href="https://www.lawyermarketing.com/" target="_blank" rel="noopener noreferrer"
-                                                            data-wpel-link="external">Business
-                                                            Development Solutions</a> by <a href="https://www.findlaw.com/" target="_blank" rel="noopener noreferrer"
-                                                            data-wpel-link="external">FindLaw</a>, part of Thomson
-                                                        Reuters</p>
-                                                    </div>
-                                            </div>
-                                            </div>
-                                            </div>
-                                </div>
-                                </div>
-                                </div>
-                                </div>
-                                </footer>
-                                </div>
-                                </div>
-                                </div>
+                                href="atlanta-medical-malpractice-law-office/index.htm"
+                                data-wpel-link="internal">Atlanta Office</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="et_pb_row et_pb_row_3_tb_footer">
+                    <div
+                        class="et_pb_column et_pb_column_4_4 et_pb_column_5_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                        <div
+                            class="et_pb_module et_pb_text et_pb_text_5_tb_footer fl-darklinks fl-margin-bottom  et_pb_text_align_left et_pb_bg_layout_light">
+                            <div class="et_pb_text_inner">
+                                <div class="default-footer">
+                                    <div class="flfooterbrand">
+                                        <p style="text-align: center;">&copy; 2024 <a href="https://lawyers.findlaw.com/profile/view/4438170_1" target="_blank"
+                                                data-wpel-link="external" rel="noopener noreferrer">Law
+                                                Offices of Villard Bastien,
+                                                LLC</a> • All Rights Reserved</p>
+                                        </div>
+                                        <div class="flfooterlink">
+                                        <p style="text-align: center;"><a href="disclaimer/index.htm" data-wpel-link="internal">Disclaimer</a> | <a
+                                                href="site-map/index.htm" data-wpel-link="internal">Site
+                                                Map</a> | <a href="privacy/index.htm" data-wpel-link="internal">Privacy
+                                                    Policy</a> | <a href="https://www.lawyermarketing.com/" target="_blank" rel="noopener noreferrer"
+                                                    data-wpel-link="external">Business
+                                                    Development Solutions</a> by <a href="https://www.findlaw.com/" target="_blank" rel="noopener noreferrer"
+                                                    data-wpel-link="external">FindLaw</a>, part of Thomson
+                                                Reuters</p>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                </footer>
+                                                </div>
+                                                </div>
+                                                </div>
     <script
         type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"WebSite","@id":"https:\/\/www.bastienlaw.com\/#home","name":"Law Offices of Villard Bastien, LLC","url":"https:\/\/www.bastienlaw.com","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.bastienlaw.com\/?s={search_term_string}","query-input":"required name=search_term_string"},"mainEntity":{"@id":"https:\/\/www.bastienlaw.com"}}</script>
     <script
@@ -4574,7 +4592,7 @@
         defer=""></script>
 
     <script>
-            FLDataLayer.features = FLDataLayer.features ||                 FLDataLayer.features.CF_FLAGGING = true;
+                FLDataLayer.features = FLDataLayer.features || FLDataLayer.features.CF_FLAGGING = true;
                 FLDataLayer.features.DISABLE_CONTACT_FORMS = false;
             </script>
         <script src="tag-manager/a0c0d582e2e6/99ae645efd27/launch-4b8eab27482e.min.js" async="" defer="defer"></script>
