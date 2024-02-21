@@ -6,3 +6,7 @@
 [![pages-build-deployment](https://github.com/noclocks/bastienlaw/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/noclocks/bastienlaw/actions/workflows/pages/pages-build-deployment)
 
 ## Overview
+
+- [Pricing](docs/pricing.md)
+- [Website Migration](docs/migration.md)
+- [FindLaw Escape](docs/findlaw.md)

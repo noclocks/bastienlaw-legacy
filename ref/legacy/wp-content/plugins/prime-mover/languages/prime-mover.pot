@@ -1,0 +1,2677 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Prime Mover\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-28 15:19+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.2; wp-5.2.1"
+
+#: utilities/PrimeMoverExportUtilities.php:46
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxInitialization.php:81
+msgid "Database backup only"
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:47
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxInitialization.php:84
+msgid "Database + Media files backup only"
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:48
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxInitialization.php:87
+msgid "Debugging package"
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:49
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxInitialization.php:90
+msgid "Complete full backup (Database + Plugins/Themes + Media files)"
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:297
+msgid "Export Options"
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:302
+msgid "Please select the export options for blog ID"
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:309
+msgid "Please select the export options for this site"
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:313
+msgid "Export database ONLY"
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:314
+msgid ""
+"Migrate only database. This is used if only database changes are needed in "
+"migration. For example, you want to test some new WordPress settings before "
+"pushing all these settings to the live site."
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:319
+msgid "Export database and media files ONLY"
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:320
+msgid ""
+"Migrate only database and media. For example, you are doing some website "
+"redesign work on your local site that involves adding new pages, posts and "
+"new images. You can migrate this to the live site using this option. It is "
+"recommended to clean up uploads directory before creating this package."
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:325
+msgid "Export package for WordPress debugging"
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:327
+msgid ""
+"This package should only be used for WordPress debugging purposes. This "
+"package does not include any media files. There might be some missing images "
+"at the target site. Do not use this option if you need all images to fully "
+"work at the target site."
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:332
+msgid "Export database, media files, plugins and themes."
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:333
+msgid ""
+"This is complete package. You need this option if you want to migrate "
+"everything including your plugins and themes. A example usage would be to "
+"perform a full-site migration from one server to another or if you want a "
+"full-site backup. This will create the largest package size."
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:340
+msgid "Export to single-site"
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:346
+msgid "Export to single-site format"
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:353
+msgid "Export to multisite"
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:359
+msgid "Export to multisite format"
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:367
+msgid "Multisite target blog ID should be an integer greater than 1"
+msgstr ""
+
+#: utilities/PrimeMoverExportUtilities.php:370
+msgid "Enter multisite target blog ID (integers only)"
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:161
+msgid "Getting Started"
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:164
+#, php-format
+msgid ""
+"Thank you for using %s ! This version includes encryption support which you "
+"can optionally enable by adding this constant to your wp-config.php :"
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:167
+msgid ""
+"It is recommended to add the same encryption keys to all of your sites wp-"
+"config.php"
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:168
+#, php-format
+msgid "To start creating backups / packages, go to %s"
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:170
+#, php-format
+msgid "Thank you for using %s ! Start migrating now by going to %s"
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:174
+#, php-format
+msgid "Go to %s"
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:179
+#: utilities/PrimeMoverFreemiusIntegration.php:194
+msgid "Upgrade to Pro Version"
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:182
+msgid ""
+"Migrate so much faster and secure your migration with database / media files "
+"encryption. Plus many more useful features you can get with Pro version. \n"
+"                             Click the button below to compare FREE and PRO "
+"plans."
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:188
+#, php-format
+msgid ""
+"Migrate so much faster and secure your migration with database / media files "
+"encryption. \n"
+"Plus many more useful features you can get with Pro version. %s.\n"
+"                         Click the button below if you are ready to upgrade "
+"ad compare plans."
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:190
+msgid "Start your 14-days FREE trial now"
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:200
+#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:210
+msgid "Settings"
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:202
+#, php-format
+msgid ""
+"%s includes settings page. Please take a moment to review these settings and "
+"make sure they are correct."
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:204
+msgid "Go to Settings"
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:209
+msgid "Support and Documentation"
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:211
+#, php-format
+msgid ""
+"%s. You can also read the %s. \n"
+"                         Contact us if you like to report bugs, suggest "
+"features, ask pre-sales questions etc. by clicking the button below."
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:215
+msgid "plugin documentation here"
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:219
+msgid "Contact us"
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:233
+msgid "There is no technical support with free version"
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:238
+msgid "Technical support is included with the Pro version"
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:251
+#: classes/PrimeMoverHookedMethods.php:481
+#: classes/PrimeMoverHookedMethods.php:529
+#: classes/PrimeMoverHookedMethods.php:530
+msgid "Migration Tools"
+msgstr ""
+
+#: utilities/PrimeMoverFreemiusIntegration.php:257
+msgid "Network Sites"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:160
+msgid "Upload package"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:161
+msgid "Restore within server backup"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:164
+msgid "Restore from a remote URL package"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:165
+#: classes/PrimeMoverHookedMethods.php:383
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:455
+msgid "Yes"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:166
+#: classes/PrimeMoverHookedMethods.php:384
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:456
+msgid "No"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:183
+#, php-format
+msgid "Restore blog ID: %d"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:186
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:601
+msgid "Restore"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:189
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:453
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:604
+msgid "Import"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:210
+#: utilities/PrimeMoverUploadUtilities.php:127
+msgid "Import done."
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:261
+#: utilities/PrimeMoverImportUtilities.php:296
+msgid "Import Cancelled!"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:262
+msgid "You cancel the import. Nothing is changed on the server."
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:279
+#: utilities/PrimeMoverImportUtilities.php:313
+#: utilities/PrimeMoverImportUtilities.php:330
+#: engines/prime-mover-panel/app/PrimeMoverSettings.php:243
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBox.php:271
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:251
+msgid "Error!"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:297
+msgid ""
+"You cancel the import and temp file deleted. Nothing is changed on the "
+"server."
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:331
+#: classes/PrimeMoverHookedMethods.php:400
+msgid "Invalid file type or corrupted zip file."
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:347
+msgid "Heads Up!"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:348
+msgid ""
+"Import process deletes old site and will be replaced with the imported "
+"package."
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:349
+msgid "Please verify that the following restoration information is correct:"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:352
+msgid "Restoration mode"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:353
+msgid "Source"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:354
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:355
+msgid "Package size"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:356
+msgid "Target blog ID"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:358
+msgid "Site title"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:359
+msgid "Encrypted database"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:360
+msgid "Encrypted media files"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:361
+msgid "Description"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:363
+msgid "To be safe, make sure you have backups ready."
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:363
+msgid "Are you sure you want to do this?"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:379
+msgid "Warning"
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:412
+msgid "Importing themes.."
+msgstr ""
+
+#: utilities/PrimeMoverImportUtilities.php:524
+msgid "Importing plugins.."
+msgstr ""
+
+#: utilities/PrimeMoverOpenSSLUtilities.php:197
+msgid "Unable to read encrypted package."
+msgstr ""
+
+#: utilities/PrimeMoverOpenSSLUtilities.php:273
+msgid "Signature or blog ID is not set. Please check."
+msgstr ""
+
+#: utilities/PrimeMoverOpenSSLUtilities.php:280
+msgid ""
+"Unable to read encrypted package database. A correct decryption key is "
+"required to restore this database."
+msgstr ""
+
+#: utilities/PrimeMoverSystemUtilities.php:134
+#: utilities/PrimeMoverSystemUtilities.php:414
+#: utilities/PrimeMoverSystemUtilities.php:415
+#: utilities/PrimeMoverSystemUtilities.php:425
+#: utilities/PrimeMoverSystemUtilities.php:505
+msgid "Not installed."
+msgstr ""
+
+#: utilities/PrimeMoverSystemUtilities.php:511
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: utilities/PrimeMoverSystemUtilities.php:527
+msgid "unknown"
+msgstr ""
+
+#: utilities/PrimeMoverUploadUtilities.php:104
+#, php-format
+msgid ""
+"Upload fails for blog ID {{BLOGID}}. Retry is attempted but still fails. %s"
+msgstr ""
+
+#: utilities/PrimeMoverUploadUtilities.php:106
+msgid "Server Error : {{UPLOADSERVERERROR}}"
+msgstr ""
+
+#: utilities/PrimeMoverUploadUtilities.php:272
+#: utilities/PrimeMoverUploadUtilities.php:390
+msgid "Unauthorized upload."
+msgstr ""
+
+#: utilities/PrimeMoverUploadUtilities.php:276
+#: classes/PrimeMoverSystemProcessors.php:369
+msgid "Chunk upload error."
+msgstr ""
+
+#: classes/PrimeMoverProgressHandlers.php:309
+msgid "Runtime error : "
+msgstr ""
+
+#: classes/PrimeMoverProgressHandlers.php:310
+#: classes/PrimeMoverErrorHandlers.php:373
+msgid "View error"
+msgstr ""
+
+#: classes/PrimeMoverProgressHandlers.php:338
+#, php-format
+msgid ""
+"Progress reporting fails for blog ID {{BLOGID}}. Retry is attempted but "
+"still fails. %s"
+msgstr ""
+
+#: classes/PrimeMoverProgressHandlers.php:340
+msgid "Server Error : {{PROGRESSSERVERERROR}}"
+msgstr ""
+
+#: classes/PrimeMoverProgressHandlers.php:441
+msgid "Site is currently undergoing maintenance work. Please come back later."
+msgstr ""
+
+#: classes/PrimeMoverProgressHandlers.php:442
+msgid "Maintenance Mode"
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:186
+msgid "Exporting plugins"
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:190
+msgid "Exporting themes"
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:236
+msgid "Blog ID is not defined"
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:240
+msgid "Creating temp folder"
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:253
+msgid "Unable to create site export folders. Check permission."
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:272
+msgid "Uable to create export folder for zip files. Check permission."
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:353
+msgid "Dumping database"
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:365 classes/PrimeMoverExporter.php:478
+msgid ""
+"Unable to dump database, please check that your database is not empty or "
+"these tables exists."
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:484
+msgid "Unable to get correct MySQLdump command."
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:531
+msgid "Undefined execute dump in PHP parameters."
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:535 classes/PrimeMoverExporter.php:583
+msgid "Unauthorized dump."
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:544
+msgid "Unable to register encrypted stream filter."
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:578
+msgid "Undefined execute dump in shell parameters."
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:588
+msgid "Error in MySQLdump shell using popen."
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:674
+msgid "Error ! Export options not set."
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:687
+msgid "Copying media files"
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:712
+msgid "Error creating a directory insides plugin export directory."
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:718
+msgid "Uploads directory of this blog does not seem to exist."
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:755
+msgid "Generating config"
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:777
+msgid "Error putting footprint files."
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:780
+msgid "Invalid system footprint"
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:898
+msgid "Zipping folders"
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:902
+msgid "Zip failed! The returned result is undefined."
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:910
+msgid "Zip failed! Some file paths exceed Windows MAX_PATH limit."
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:913
+msgid "Zip failed! Please check if you have zip extension enabled."
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:939
+msgid "Deleting temp folder"
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:943
+msgid "Unable to delete temporary directory"
+msgstr ""
+
+#: classes/PrimeMoverExporter.php:970
+msgid "Generate download URL"
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:183 classes/PrimeMoverImporter.php:723
+#: classes/PrimeMoverImporter.php:891 classes/PrimeMoverImporter.php:944
+#: classes/PrimeMoverImporter.php:997 classes/PrimeMoverImporter.php:1161
+#: classes/PrimeMoverImporter.php:1218 classes/PrimeMoverImporter.php:1263
+msgid "Errors or diffs detected, alert user."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:257
+msgid "Processing upload.."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:293
+msgid "Unzipping package"
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:320
+msgid "Unzip failed. The package is not a multisite migration site package."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:330
+msgid ""
+"Unzip failed. Please check if you have zip extension enabled or enable error "
+"logs."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:336 classes/PrimeMoverImporter.php:402
+#: classes/PrimeMoverImporter.php:646
+msgid "Unzipped directory does not exist."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:342
+msgid "Import file does not seem to exist."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:366
+msgid "Checking import package"
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:391
+msgid "Mismatch import!"
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:395 classes/PrimeMoverImporter.php:399
+msgid "Corrupt package"
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:431
+msgid "Comparing system footprint"
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:467
+msgid ""
+"Site URL is not defined in this imported package, please re-generate the "
+"package at the source site."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:471
+msgid ""
+"WordPress root is not defined in this imported package, please re-generate "
+"the package at the source site."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:475
+msgid ""
+"Site URL is not defined in this site. Please check your multisite settings."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:479
+msgid ""
+"WordPress root is not defined in this site. Please check your multisite "
+"settings."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:504
+msgid "System footprint of package is not found"
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:580
+msgid "Difference detected, alert user."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:600
+msgid "Importing media files"
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:603
+msgid "Extraction failed."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:616
+msgid "Failed opening archive"
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:630
+msgid "Blog id does not exist."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:641
+msgid "Unzipped directory is empty."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:654
+msgid "Media path directory does not exist."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:672
+msgid "Error deleting media directory. Please check for permissions."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:727
+msgid ""
+"Unzipped directory is missing. It is deleted while the import is ongoing. "
+"Please repeat again."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:731
+msgid "Importing database tables"
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:736
+msgid "Unable to find the correct SQL path."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:822
+msgid "Unable to open database file."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:897
+msgid "Renaming dB prefix with target site."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:916
+msgid ""
+"Unable to rename tables, please check that your database is not empty or "
+"these tables exists."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:948
+msgid "Activating plugins"
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:1173
+msgid "Search and replace."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:1181
+msgid ""
+"Unable to generate replaceables, could that your site package is corrupted. "
+"Please check."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:1222
+msgid "Saving uploads info.."
+msgstr ""
+
+#: classes/PrimeMoverImporter.php:1267
+msgid "Restoring uploads info.."
+msgstr ""
+
+#: classes/PrimeMoverSystemProcessors.php:166
+msgid "Unauthorized request"
+msgstr ""
+
+#: classes/PrimeMoverSystemProcessors.php:180
+#: classes/PrimeMoverSystemProcessors.php:186
+msgid "Incorrect nonce"
+msgstr ""
+
+#: classes/PrimeMoverSystemProcessors.php:297
+msgid "Unauthorized request."
+msgstr ""
+
+#: classes/PrimeMoverSystemProcessors.php:342
+msgid "No file uploaded"
+msgstr ""
+
+#: classes/PrimeMoverSystemProcessors.php:389
+msgid "File type error."
+msgstr ""
+
+#: classes/PrimeMoverSystemProcessors.php:530
+msgid "Starting import"
+msgstr ""
+
+#: classes/PrimeMoverSystemProcessors.php:580
+msgid "Import failed for unknown reason."
+msgstr ""
+
+#: classes/PrimeMoverSystemProcessors.php:659
+msgid "Starting export"
+msgstr ""
+
+#: classes/PrimeMoverSystemProcessors.php:683
+msgid "Export saved !"
+msgstr ""
+
+#: classes/PrimeMoverSystemProcessors.php:693
+msgid "Export failed"
+msgstr ""
+
+#: classes/PrimeMoverErrorHandlers.php:372
+msgid "Runtime Error : "
+msgstr ""
+
+#: classes/PrimeMoverSystemInitialization.php:1237
+msgid ""
+"Wrong import site package! Please check that the import zip package is "
+"correct for this site."
+msgstr ""
+
+#: classes/PrimeMoverSystemInitialization.php:1246
+msgid ""
+"This package cannot be restored because of media decryption error. To fix "
+"this, please upgrade Libzip version to 1.2.0 or higher."
+msgstr ""
+
+#: classes/PrimeMoverSystemFunctions.php:853
+#, php-format
+msgid ""
+"Some dependencies required for the imported site is not meet. Please review "
+"and do %s proceed if this can adversely affect your site"
+msgstr ""
+
+#: classes/PrimeMoverSystemFunctions.php:856
+msgid "NOT"
+msgstr ""
+
+#: classes/PrimeMoverSystemFunctions.php:863
+msgid "Plugin differences"
+msgstr ""
+
+#: classes/PrimeMoverSystemFunctions.php:865
+msgid "Plugin"
+msgstr ""
+
+#: classes/PrimeMoverSystemFunctions.php:875
+#: classes/PrimeMoverSystemFunctions.php:888
+msgid "Version"
+msgstr ""
+
+#: classes/PrimeMoverSystemFunctions.php:877
+msgid "Source site"
+msgstr ""
+
+#: classes/PrimeMoverSystemFunctions.php:890
+msgid "Target site"
+msgstr ""
+
+#: classes/PrimeMoverSystemFunctions.php:902
+msgid "Theme differences"
+msgstr ""
+
+#: classes/PrimeMoverSystemFunctions.php:926
+#: classes/PrimeMoverSystemFunctions.php:941
+#: classes/PrimeMoverSystemFunctions.php:966
+#: classes/PrimeMoverSystemFunctions.php:986
+msgid "version"
+msgstr ""
+
+#: classes/PrimeMoverSystemFunctions.php:930
+msgid "Source site parent theme"
+msgstr ""
+
+#: classes/PrimeMoverSystemFunctions.php:932
+msgid "Source site theme"
+msgstr ""
+
+#: classes/PrimeMoverSystemFunctions.php:942
+#: classes/PrimeMoverSystemFunctions.php:950
+msgid "Source site child theme"
+msgstr ""
+
+#: classes/PrimeMoverSystemFunctions.php:949
+#: classes/PrimeMoverSystemFunctions.php:995
+msgid "Not using child theme."
+msgstr ""
+
+#: classes/PrimeMoverSystemFunctions.php:972
+msgid "Target site parent theme"
+msgstr ""
+
+#: classes/PrimeMoverSystemFunctions.php:975
+msgid "Target site theme"
+msgstr ""
+
+#: classes/PrimeMoverSystemFunctions.php:989
+#: classes/PrimeMoverSystemFunctions.php:997
+msgid "Target site child theme"
+msgstr ""
+
+#: classes/PrimeMoverSystemFunctions.php:1002
+msgid "Are you sure you want to proceed with the import?"
+msgstr ""
+
+#: classes/PrimeMoverValidationHandlers.php:135
+#, php-format
+msgid "%s of %s array parameter is an invalid data"
+msgstr ""
+
+#: classes/PrimeMoverValidationHandlers.php:138
+#, php-format
+msgid "%s is not a valid nonce format"
+msgstr ""
+
+#: classes/PrimeMoverValidationHandlers.php:141
+#, php-format
+msgid "%s is not a positive integer"
+msgstr ""
+
+#: classes/PrimeMoverValidationHandlers.php:144
+#, php-format
+msgid "%s is not a valid migration package"
+msgstr ""
+
+#: classes/PrimeMoverValidationHandlers.php:147
+msgid "Diff data is not a valid json format"
+msgstr ""
+
+#: classes/PrimeMoverValidationHandlers.php:150
+#, php-format
+msgid "%s is not a directory"
+msgstr ""
+
+#: classes/PrimeMoverValidationHandlers.php:153
+#, php-format
+msgid "%s is not a sha256 string"
+msgstr ""
+
+#: classes/PrimeMoverValidationHandlers.php:156
+#, php-format
+msgid "%s is not boolean"
+msgstr ""
+
+#: classes/PrimeMoverValidationHandlers.php:159
+#, php-format
+msgid "%s is not a sha512 string"
+msgstr ""
+
+#: classes/PrimeMoverValidationHandlers.php:162
+#, php-format
+msgid "%s is not valid URL"
+msgstr ""
+
+#: classes/PrimeMoverValidationHandlers.php:165
+#, php-format
+msgid "%s is not a valid float"
+msgstr ""
+
+#: classes/PrimeMoverValidationHandlers.php:168
+#, php-format
+msgid "%s is not a migration package format"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:119
+msgid "Export Site"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:120
+msgid "Import Site"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:187
+#, php-format
+msgid "Export %s with blog ID: %d"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:189
+msgid "Export site"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:216
+msgid "Export blog ID"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:218
+msgid "Export"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:377
+msgid "Uploading in progress."
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:379
+msgid "Site successfully imported!"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:380
+msgid "Import error!"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:381
+msgid "Export now"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:382
+#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:189
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:454
+msgid "Cancel"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:385
+msgid "OK"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:389
+msgid "Export downloaded to computer"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:390
+msgid "Processing"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:391
+msgid "Initializing download"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:392
+msgid "Downloading package"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:393
+msgid "Uploading to Dropbox"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:394
+msgid "Unknown error occurred, please try again."
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:395
+msgid "Analyzing zip.."
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:399
+msgid ""
+"Aborting upload ! PHP upload is misconfigured. POST_MAX_SIZE setting in php."
+"ini should be greater than UPLOAD_MAX_FILESIZE"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:401
+msgid ""
+"Restoring package beyond 4GB is not supported by browser uploads. Please "
+"upgrade to premium version and use remote URL restore feature."
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:434
+msgid ""
+"Prime Mover plugin is not yet ready to use. Error: Unable to create its own "
+"export folder. \n"
+"\t\t\t\t\tThis is required to export sites. Please make sure WordPress has "
+"permission to create folder in your uploads directory."
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:441
+#, php-format
+msgid "Prime Mover plugin is activated but not yet ready to use. %s."
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:443
+msgid ""
+"Error: WordPress FileSystem API not set since it requires DIRECT FILE "
+"PERMISSIONS"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:444
+msgid ""
+"Make sure WordPress is creating files as the same owner as the WordPress "
+"files."
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:450
+msgid ""
+"Prime Mover plugin is not yet ready to use. Error: Requires PHP Zip "
+"extension to be enabled. Please check with you web host."
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:455
+msgid ""
+"Prime Mover plugin is not yet ready to use. Error: Requires at least PHP 5.6."
+"0."
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:460
+msgid ""
+"Prime Mover plugin is not yet ready to use. Error: Requires mbstring PHP "
+"extension. Please enable it."
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:465
+msgid ""
+"Prime Mover plugin is not yet ready to use. Error: Requires fileinfo PHP "
+"extension. Please enable it."
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:484
+msgid "Export / Backup"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:487
+msgid ""
+"This export tool can be used to migrate WordPress to the following supported "
+"modes"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:490
+msgid ""
+"Migrate single-site to another server single-site installation and vice versa"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:491
+msgid "Migrate single-site to a multisite subsite installation and vice versa"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:492
+msgid "Backup single site so it can be restored anytime"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:502
+msgid "Import / Restore"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:504
+msgid ""
+"This import tool can be used to restore an export package with the following "
+"restore modes "
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:507
+msgid ""
+"Restore single-site package from another site to this site and vice versa"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:508
+msgid ""
+"Restore single-site package from multisite subsite to this site and vice "
+"versa"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:509
+msgid "Restore a single-site backup created by this site and vice versa"
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:511
+msgid ""
+"Please do not refresh or navigate away from this page while import is "
+"ongoing."
+msgstr ""
+
+#: classes/PrimeMoverHookedMethods.php:547
+#: classes/PrimeMoverHookedMethods.php:560
+msgid "Prime Mover Control Panel"
+msgstr ""
+
+#. Name of the plugin
+#: classes/PrimeMoverHookedMethods.php:547
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxScreenOptions.php:306
+msgid "Prime Mover"
+msgstr ""
+
+#: classes/PrimeMoverSystemChecks.php:503
+msgid "Migrate/Backup Sites"
+msgstr ""
+
+#: dependency-checks/PrimeMoverPHPCoreFunctionDependencies.php:105
+#, php-format
+msgid ""
+"The %s plugin cannot be activated if these following PHP core functions are "
+"missing"
+msgstr ""
+
+#: dependency-checks/PrimeMoverPHPCoreFunctionDependencies.php:116
+msgid ""
+"Please contact your web hosting provider to enable these required PHP "
+"functions for you."
+msgstr ""
+
+#: dependency-checks/PrimeMoverWPCoreDepedencies.php:63
+#, php-format
+msgid ""
+"The %s plugin cannot run on WordPress versions older than %s. Please update "
+"WordPress."
+msgstr ""
+
+#: dependency-checks/PrimeMoverPHPVersionDependencies.php:75
+#, php-format
+msgid ""
+"The %s plugin cannot run on PHP versions older than %s. Please contact your "
+"host and ask them to upgrade."
+msgstr ""
+
+#: dependency-checks/PrimeMoverFileSystemDependencies.php:105
+#, php-format
+msgid ""
+"The %s plugin cannot be activated if the following paths were not writable "
+"by WordPress"
+msgstr ""
+
+#: dependency-checks/PrimeMoverFileSystemDependencies.php:116
+msgid ""
+"Please contact your web hosting provider or system administrator to make "
+"these paths writable."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:140
+#, php-format
+msgid "Success! Exclude uploads entries %s"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:142
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:209
+msgid ""
+"Some settings successfully saved except for the validation errors below: "
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:144
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:211
+msgid "No settings are saved because of validation errors found: "
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:187
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:250
+#, php-format
+msgid "%s input is not in correct format. It should be in %s format."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:195
+#, php-format
+msgid "%s does not have resource to be excluded."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:249
+#, php-format
+msgid "%s input identifier should have ID on it."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:254
+#, php-format
+msgid "%s input identifier is malformed. It should be in %s format."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:260
+#, php-format
+msgid "%s input has an invalid identifier. Accepted values: %s, %s, %s"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:267
+#, php-format
+msgid ""
+"%s input error: Blog ID of %s is not valid for single-site configuration."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:272
+#, php-format
+msgid "%s input error: Blog ID of %s is not valid for multisite configuration."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:277
+#, php-format
+msgid "%s input error: No site exists on the blog ID of %s"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:311
+#, php-format
+msgid "%s contains empty resource value."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:350
+#, php-format
+msgid "%s extension should not include dot."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:375
+#, php-format
+msgid "%s is an invalid relative %s path entry."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:385
+msgid "No basedir exist in this server uploads configuration, please check."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:394
+#, php-format
+msgid "%s path does not seem to exist."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:400
+#, php-format
+msgid "%s is not a %s entity."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:68
+msgid "Dropbox upload chunk"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:72
+msgid "Dropbox upload chunk size (bytes, integers only)"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:75
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:137
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:167
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:201
+msgid "Default value"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:76
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:168
+msgid "bytes"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:80
+msgid ""
+"When you export a package to Dropbox, it is broken down into chunks. This "
+"makes it easier to monitor the upload progress using Dropbox API upload "
+"sessions. The default value is nearly 2MB per chunk which is suitable in "
+"most cases."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:83
+msgid ""
+"Tip: When you set a very small chunk size, the API will log a lot of "
+"requests which counts towards your Dropbox API quota. When you set a very "
+"large chunk, it is prone to timeout and disconnection."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:130
+msgid "Upload refresh interval"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:134
+msgid "Upload refresh interval (milliseconds, integers only)"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:138
+msgid "milliseconds"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:142
+msgid ""
+"This is the JavaScript setTimeout setting for uploading chunks. Setting this "
+"to a very fast setting can overload your server with too many upload ajax "
+"requests. \n"
+"           Setting this to a very slow value will slow down the upload "
+"significantly."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:146
+msgid ""
+"Tip: The default setting which is 1 second is optimal in most cases. Only "
+"tweak this setting if its highly necessary. Please refresh the sites network "
+"page after saving this setting."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:161
+msgid "Upload chunk size"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:165
+msgid "Upload chunk size (bytes, integers only)"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:172
+msgid ""
+"When you restore a site via upload, an upload package is broken down into "
+"slices or chunks. With this method, upload will still work even in servers "
+"with limited upload size configuration. The chunk size in bytes depends on "
+"your server limits."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:175
+msgid ""
+"You can override the default upload chunk size here. The default value is "
+"automatically computed based on your server safe upload limits. You do not "
+"need to change this value as this is the optimal setting that works in most "
+"cases."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:178
+msgid ""
+"Tip: If you want to override this value, please do not put a value that is "
+"beyond your server limits. Know your server upload limits first before "
+"overriding this setting. \n"
+"       Please refresh the sites network page after saving this setting."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:195
+msgid "Upload retry limit"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:199
+msgid "Upload retry limit (integers only)"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:202
+msgid "times"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:206
+msgid ""
+"The client-side script will attempt re-sending the information to the server "
+"in the event of an error. This setting is the number of times Ajax will "
+"retry."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:209
+msgid ""
+"Tip: The default setting is 1000 retries. This appears optimal in cases "
+"where a long 503 server header status is expected (e.g. when site is in "
+"maintenance mode). \n"
+"       You can adjust the retry limit to any sensible value. Please refresh "
+"the sites network page after saving this setting."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:132
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:146
+msgid "Export site info"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:137
+msgid ""
+"Note: This is the export button for site information. This contain the "
+"details of how the site is configured, PHP settings, etc. Developer or "
+"technical support might ask for this info for troubleshooting. "
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:141
+msgid ""
+"Tip: The exported information can contain sensitive or private information. "
+"Please do not post this in public or share with anyone."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:162
+msgid "Troubleshooting"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:170
+msgid "Enable troubleshooting log"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:174
+#, php-format
+msgid ""
+"%s : These logs can contain sensitive/private details. Please do not post "
+"this information publicly or share to anyone. \n"
+"          For maximum security, move your backup directory outside public "
+"html to prevent unauthorized access to these log. You can do this very "
+"easily in the %s."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:176
+msgid "Important"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:177
+msgid "basic settings page"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:180
+#, php-format
+msgid ""
+"Interpreting these logs requires advance knowledge of migration processes. "
+"It is recommended to enable this only if advised by the technical support or "
+"plugin developer to analyze these data. \n"
+"              The generated logs are stored in your %s."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:196
+msgid "Clear Log"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:200
+msgid "Clear logs"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:203
+msgid ""
+"You can clear the migration log using this button. It is recommended you "
+"clear the log and disable the troubleshooting once all migration analysis "
+"are completed."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:228
+msgid "Download Log"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:233
+msgid "Download log file"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:236
+msgid ""
+"You can download the troubleshooting log using this button. By default, "
+"there is no data in the log. \n"
+"         You need to enable troubleshooting log first. Once troubleshooting "
+"is enabled, you need to export and import site. It will then log some "
+"migration data."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:240
+msgid ""
+"This will only log events related to migrations, that's all. If you need the "
+"log for PHP errors, you need to use the standard WordPress debug.log for "
+"this. \n"
+"        Take note that this log might contain sensitive info, so it's best "
+"to clear the log or delete it in your computer after analyzing them."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:253
+msgid "Persist / HTTP API Log"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:259
+msgid "Persist logs for simultaneous migrations and enable HTTP API debug"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:263
+msgid ""
+"Note: By default, it only logs events for the current subsite being "
+"processed for either export/import. \n"
+"                If this is checked, it will log all events from ALL sites "
+"currently under migration."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:268
+msgid ""
+"This setting will also enable WordPress HTTP API debug. This is useful when "
+"troubleshooting remote URL package imports."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:272
+msgid "Warning: This setting requires troubleshooting to be ENABLED."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:287
+msgid "JavaScript Log"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:294
+msgid "Enable migration JavaScript console log"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:298
+msgid ""
+"If this setting is checked, it will output logged-events to browser console "
+"when doing migrations."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:313
+msgid "Chunk debug"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:320
+msgid "Enable upload chunk debug log"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:324
+msgid ""
+"If this setting is checked, it will output upload chunk events to browser "
+"console when doing site imports via upload."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:358
+#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:125
+#: engines/prime-mover-panel/app/PrimeMoverReset.php:113
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBox.php:254
+msgid "Warning!"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:359
+#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:126
+#: engines/prime-mover-panel/app/PrimeMoverReset.php:114
+#, php-format
+msgid "Are you really sure you want to %s"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:360
+msgid "clear the log"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverBackupDirectorySize.php:63
+#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:74
+#: engines/prime-mover-panel/app/PrimeMoverReset.php:142
+msgid "Error ! Invalid request"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverBackupDirectorySize.php:68
+msgid "Error ! There is a problem computing backup dir size."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverBackupDirectorySize.php:70
+#, php-format
+msgid "Total backup size is %s"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverBackupDirectorySize.php:120
+msgid "Backup stats"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverBackupDirectorySize.php:124
+msgid "Compute Backup Directory Size"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverBackupDirectorySize.php:127
+msgid ""
+"Using the above button, you can compute the total backup directory size. You "
+"can use this information to decide whether its time to clean up or delete "
+"old backups."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:78
+msgid "Success! All backups deleted"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:81
+msgid ""
+"Error deleting files. Please check for permission issues in your backup "
+"directory."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:94
+msgid "Delete ALL backups"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:98
+msgid "Delete ALL Backups"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:101
+#, php-format
+msgid ""
+"Using the above button, you can %s created by the plugin in %s. \n"
+"                   Careful, there is no way to restore these files once "
+"deleted!"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:103
+msgid "delete all backup zips including logs"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:104
+msgid "in a single-site or all sites in this network if multisite"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:127
+msgid "DELETE ALL BACKUPS"
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:128
+msgid ""
+"This will delete ALL backup zips and log files in your backup directory."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:129
+msgid "This will also delete all the troubleshooting logs."
+msgstr ""
+
+#: engines/prime-mover-panel/utilities/PrimeMoverSettingsMarkups.php:62
+msgid "Save"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:118
+#, php-format
+msgid "%s is not a valid directory format."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:123
+#, php-format
+msgid "%s is not a valid directory name."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:129
+#, php-format
+msgid "%s is not a valid directory name. It should NOT include %s folder name."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:134
+#, php-format
+msgid "%s is already used by another domain."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:285
+msgid "Error ! Custom backup directory should be full absolute path."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:289
+#, php-format
+msgid ""
+"Error! Custom backup directory %s could not be created. Please check for "
+"permissions on this path."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:294
+#, php-format
+msgid ""
+"Error! Custom backup directory could not be created at %s. Please check for "
+"permissions on this path."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:304
+#, php-format
+msgid "Success! Custom backup directory is already set at %s."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:310
+#, php-format
+msgid ""
+"Error! Target backup directory could not be created at %s. Please check for "
+"permissions on this path."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:321
+#, php-format
+msgid ""
+"Success! Custom backup directory is created at %s and old backups are "
+"migrated to this directory"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:335
+#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:210
+msgid "Basic settings"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:359
+msgid "Custom backup directory"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:365
+msgid ""
+"By default, the export directory is located in WordPress uploads directory. "
+"\n"
+"                    This is automatically protected by .htaccess (for Apache "
+"servers) to prevent any unauthorized access."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:369
+msgid ""
+"If your server is Nginx or any server which does not use .htaccess. \n"
+"                    You can change the Custom backup directory setting by "
+"putting it outside the webroot for more security."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:373
+msgid ""
+"Any existing backup files will be automatically migrated to the new backup "
+"location and the old backup directory is removed."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:377
+msgid "Important: Custom backup directory path should be FULL ABSOLUTE PATH."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:161
+msgid "You have provided an empty access token. Please try again."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:165
+msgid ""
+"Dropbox instance is missing. Check that all multisite migration plugin "
+"components are correctly installed."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:172
+msgid "Dropbox access token successfully saved."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:193
+msgid ""
+"Invalid Dropbox access token key provided. Please review if its correct or "
+"check your connection."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:212
+#, php-format
+msgid ""
+"If you are sure the token is correct. Try this workaround if you are using "
+"%s server."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:257
+msgid "Dropbox access token"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:267
+msgid "Show Dropbox access token"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:271
+msgid ""
+"This is an export option support for saving a copy of exported package to "
+"Dropbox file hosting service. You need to enter a valid Dropbox access token "
+"for this to work."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:275
+#, php-format
+msgid "To get an access token, you need to %s. Then in your app, go to %s."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:276
+msgid "create Dropbox app"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:277
+msgid "Oauth 2 - Generate Access token"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:207
+#, php-format
+msgid "Success! Authorization keys %s"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:260
+#, php-format
+msgid "%s does not have keys."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:269
+#, php-format
+msgid "%s is an invalid domain"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:272
+#, php-format
+msgid "%s has weak authorization key length. It should be at least %s."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:273
+msgid "64 characters in length and alphanumeric format only"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:354
+msgid "Authorization Keys"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:371
+msgid "Show authorization keys"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:376
+msgid ""
+"Generate download authorization keys for this site using the button below. "
+"It must be ONE LINE PER DOMAIN:AUTHORIZATION_KEYS. \n"
+"                        Accepts alphanumeric keys only and it be should be "
+"at least 64-characters in length with no spaces. Any invalid characters will "
+"be removed."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:385
+msgid "Update"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:388
+msgid "Generate"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:393
+#, php-format
+msgid "%s authorization key of this site. This is 64-characters in length."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:394
+#, php-format
+msgid "%s authorization key of this site."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:401
+msgid ""
+"These keys will be used to authenticate download request. Only sites you "
+"have authorized will be able to download and migrate package."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:405
+msgid "Copy authorization key of this site to clipboard."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:406
+msgid "Copy site authorization key to clipboard"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:409
+msgid "Copied"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:414
+msgid ""
+"IMPORTANT: Please COPY AND PASTE these DOMAIN:AUTHORIZATION_KEYS to all "
+"sites you manage in Prime Mover Control Panel settings. Otherwise the "
+"download request will be unauthorized - 401 error."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:419
+msgid ""
+"Always keep these authorization keys confidential and private. Backup these "
+"keys by writing on a paper and put it on a safe location."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:153
+msgid "Export filters"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:163
+msgid ""
+"By default, all files/folders in uploads directory will be included in the "
+"export package. This is when exporting a package that includes media files."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:167
+msgid ""
+"However you can exclude files/folders in your uploads directory during "
+"export by adding exclusion rules above. \n"
+"                    You can use this reduce size of the export package or "
+"remove unwanted files/directories in the export."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:173
+#, php-format
+msgid ""
+"Please add ONE LINE per excluded file/folder using %s format where %s is the "
+"blog id if using multisite. It should be 1 in single-site.\n"
+"                     Please see examples below on how to add your own "
+"exclusion rules :"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:180
+msgid ""
+"Excluding examplebigfile.mp4 and anotherbigfile.wav in 2019/04 uploads "
+"folder in a single-site"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:183
+msgid ""
+"Excluding 2019/03 and 2017/03/very-big-folder of an uploads directory for "
+"multisite blog id 999"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:185
+msgid ""
+"Excluding avi, zip, mp4 file extensions inside uploads directory of a single-"
+"site configuration"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:187
+msgid ""
+"Excluding huge_surprise.avi in 2018\\10 uploads folder in a single-site "
+"Windows Server (use backlash)"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:192
+#, php-format
+msgid ""
+"Replace %s with the multisite blog id where this exclusion applies if you "
+"are using multisite. %s."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:194
+msgid "Set 1 as the blogid if you are in single-site configuration"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:195
+msgid ""
+"Always wrap each resource in double quotes and separate each of them with a "
+"comma."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverDownloadSecurity.php:193
+msgid "Security settings"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverBackupManagement.php:131
+#, php-format
+msgid ""
+"Success! Custom backup directory will be %s back to default uploads backup "
+"directory when Control Panel plugin is %s."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverBackupManagement.php:132
+msgid "COPIED"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverBackupManagement.php:132
+#: engines/prime-mover-panel/helpers/PrimeMoverBackupManagement.php:135
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:245
+msgid "DEACTIVATED"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverBackupManagement.php:134
+#, php-format
+msgid ""
+"Success! Custom backup directory will %s back to default uploads backup "
+"directory when Control Panel plugin is %s."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverBackupManagement.php:135
+msgid "NOT BE COPIED"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverBackupManagement.php:168
+msgid "Backup management"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverMaintenanceMode.php:103
+#: engines/prime-mover-panel/helpers/PrimeMoverMaintenanceMode.php:105
+#, php-format
+msgid "Success! Maintenance mode during imports will be %s."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverMaintenanceMode.php:103
+msgid "ENABLED"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverMaintenanceMode.php:105
+msgid "OFF"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverMaintenanceMode.php:130
+msgid "Maintenance mode"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverMaintenanceMode.php:140
+msgid ""
+"By default, maintenance mode is enabled when migrating a site that includes "
+"some plugins or themes. \n"
+"                    This is the safest mode to avoid possibility of data "
+"corruption. It is because plugin in multisite could be used in different sub-"
+"sites.\n"
+"                    "
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverMaintenanceMode.php:145
+msgid ""
+"However this maintenance mode might disrupt important operations in all "
+"other subsites. You can choose to disable maintenance mode here."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:129
+#, php-format
+msgid "%s is not set."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:134
+#, php-format
+msgid "%s does not exist."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:139
+#, php-format
+msgid "%s is not a valid file."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:145
+#, php-format
+msgid "%s does not have an extension."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:149
+#, php-format
+msgid "%s file extension is not allowed."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:154
+#, php-format
+msgid "%s content seems to be an invalid config file."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:173
+msgid "MySQLdump configuration file successfully saved."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:199
+msgid "MySQLdump security"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:209
+msgid "Show MySQLdump config file path"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:213
+msgid ""
+"This is the path to MySQL secure option file which will be used for "
+"MySQLdump command. This setting is OPTIONAL but highly recommended for "
+"security. \n"
+"                    By using a secure option file (.my.cnf), the MySQLdump "
+"process will not include the password parameter in its command. Thus any "
+"user cannot read the MySQL password from a command line process."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:219
+#, php-format
+msgid ""
+"The MySQLdump will read the credentials from the MySQL config file path you "
+"set in this setting. You can read more tips about this implementation in "
+"this %s."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:224
+msgid "Note: Only .cnf and .ini file extension is allowered in this setting"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:163
+#, php-format
+msgid ""
+"Success! Excluded plugin settings are %s Please review the updated list."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:214
+msgid "Excluded plugins"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:223
+msgid ""
+"By default, all plugins that is activated for the exported site will be "
+"included in the export package."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:227
+#, php-format
+msgid ""
+"It is possible to exclude plugins from being exported by adding the %s in "
+"the above text area. Use the tool below to add or updated excluded plugins "
+"to the text area (Prime Mover is already excluded by default):"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:228
+msgid "plugin basename"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:232
+msgid "Click this button to expand activated plugins."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:233
+#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:192
+msgid "Click to expand"
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:240
+msgid ""
+"Take note this is a global setting and applies to every export generated in "
+"this site. You can use this setting to exclude plugins that is is not needed "
+"in the target site."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:244
+#, php-format
+msgid ""
+"As a result, this excluded plugin is %s at the target site after the package "
+"is imported."
+msgstr ""
+
+#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:277
+msgid "No other plugins found"
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:175
+#, php-format
+msgid "Server error found ! Please enable %s to generate %s and try again."
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:177
+#, php-format
+msgid "Server error found ! Please check WordPress %s for more details."
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:187
+msgid "Yes delete ALL"
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:188
+msgid "Clear all"
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:193
+msgid "Click to close"
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:213
+msgid "Advance settings"
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:213
+msgid "Advance"
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:224
+msgid "Prime Mover Settings"
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:228
+#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:251
+msgid ""
+"Ongoing database export processing and maintenance. Settings panel is "
+"temporarily unavailable. Please try again later."
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:247
+msgid "Advance Settings Panel"
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverSettings.php:193
+#: engines/prime-mover-panel/app/PrimeMoverSettings.php:214
+#: engines/prime-mover-panel/app/PrimeMoverSettings.php:219
+msgid "Error ! Unauthorized"
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverSettings.php:198
+msgid "Error ! Undefined settings."
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverSettings.php:224
+msgid "Error ! Invalid setting being saved. Please check again."
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverSettings.php:228
+msgid "Error ! This value cannot be negative. Please check again."
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverReset.php:65
+msgid "Settings management"
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverReset.php:80
+msgid "Reset settings"
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverReset.php:85
+msgid "Reset to defaults"
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverReset.php:88
+#, php-format
+msgid ""
+"Using the above button, you can %s used by this plugin. Take note that this "
+"reset button applies to both basic and advance settings."
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverReset.php:89
+msgid "reset ALL settings"
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverReset.php:93
+msgid ""
+"Careful, there is no way to restore these settings once deleted. Make a copy "
+"of these settings if it is important!"
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverReset.php:115
+msgid "reset all settings"
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverReset.php:116
+msgid "This will delete both basic and advance settings used by this plugin."
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverReset.php:151
+msgid "Success! Settings resetted."
+msgstr ""
+
+#: engines/prime-mover-panel/app/PrimeMoverReset.php:154
+msgid "Error resetting settings. Please try again later."
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverUploadSettings.php:131
+msgid "Upload chunk size update success"
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverUploadSettings.php:132
+msgid "Upload chunk size update failed"
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverUploadSettings.php:162
+msgid "Dropbox chunk upload size successfully saved."
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverUploadSettings.php:163
+msgid "Dropbox chunk upload size update failed"
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverUploadSettings.php:195
+msgid "Upload retry limit successfully saved."
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverUploadSettings.php:196
+msgid "Upload retry limit update failed"
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverUploadSettings.php:215
+msgid "Upload refresh interval update saved."
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverUploadSettings.php:216
+msgid "Upload refresh interval update failed"
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverUploadSettings.php:247
+msgid "Upload parameters"
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:208
+msgid "Upload chunk debug enabled."
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:208
+msgid "Upload chunk debug disabled."
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:209
+msgid "Upload chunk debug update failed"
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:237
+msgid "JavaScript troubleshooting enabled."
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:237
+msgid "JavaScript troubleshooting disabled."
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:238
+msgid "JavaScript troubleshooting update failed"
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:249
+msgid "Persist troubleshooting enabled."
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:249
+msgid "Persist troubleshooting disabled."
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:250
+msgid "Persist troubleshooting update failed"
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:266
+msgid "Clear log error fails."
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:273
+msgid "Clear log success."
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:291
+msgid "Troubleshooting enabled."
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:291
+msgid "Troubleshooting disabled."
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:292
+msgid "Troubleshooting update failed"
+msgstr ""
+
+#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:304
+msgid "Debugging Tools"
+msgstr ""
+
+#: engines/prime-mover-flywheel/app/CreateBlogSpecificID.php:202
+msgid "Prime Mover Target Blog ID"
+msgstr ""
+
+#: engines/prime-mover-flywheel/app/CreateBlogSpecificID.php:203
+msgid "Optional"
+msgstr ""
+
+#: engines/prime-mover-flywheel/app/CreateBlogSpecificID.php:206
+msgid ""
+"You can assign a specific blog ID for this newly created site. This is "
+"optional.\n"
+"        Make sure the target blog ID is available and not used with any site."
+msgstr ""
+
+#: engines/prime-mover-flywheel/app/CreateBlogSpecificID.php:209
+msgid ""
+"If target blog ID provided is already used with existing sites; \n"
+"        WordPress will generate a new blog ID. Then the target blog ID is "
+"ignored."
+msgstr ""
+
+#: engines/prime-mover-flywheel/app/PrimeMoverDropBox.php:175
+msgid "This can take some time for slower connections."
+msgstr ""
+
+#: engines/prime-mover-flywheel/app/PrimeMoverDropBox.php:287
+msgid "Export saved but unable to compute chunk size."
+msgstr ""
+
+#: engines/prime-mover-flywheel/app/PrimeMoverDropBox.php:291
+msgid "Export saved but unable to open Dropbox export package."
+msgstr ""
+
+#: engines/prime-mover-flywheel/app/PrimeMoverDropBox.php:389
+msgid "Export saved but Dropbox upload failed because its not set."
+msgstr ""
+
+#: engines/prime-mover-flywheel/app/PrimeMoverDropBox.php:399
+msgid "Export saved but failed to open Dropbox lock file"
+msgstr ""
+
+#: engines/prime-mover-flywheel/app/PrimeMoverDropBox.php:406
+msgid "Preparing Dropbox upload.."
+msgstr ""
+
+#: engines/prime-mover-flywheel/app/PrimeMoverDropBox.php:413
+msgid "uploading_to_dropbox"
+msgstr ""
+
+#: engines/prime-mover-flywheel/app/PrimeMoverDropBox.php:423
+msgid "Export saved but Dropbox upload failed."
+msgstr ""
+
+#: engines/prime-mover-flywheel/app/PrimeMoverDropBox.php:435
+msgid "Export saved but failed to obtain Dropbox lock file"
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxScreenOptions.php:308
+msgid "Show only sites containing backups"
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:104
+msgid "Unauthorized download"
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:107
+#, php-format
+msgid "Header status %d is returned"
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:122
+msgid "Invalid file type."
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:151
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxDeleteTemp.php:116
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxDeleteTemp.php:129
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxDeleteTemp.php:137
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxDeleteTemp.php:178
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBox.php:185
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBox.php:206
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBox.php:218
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:319
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:327
+msgid "Unauthorized"
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:164
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:172
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxDeleteTemp.php:190
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxDeleteTemp.php:198
+msgid "Unauthorized, clear browser cache and try again."
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:168
+msgid "Blog id not set, clear browser cache and try again."
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:190
+msgid "There are no files to restore"
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:251
+msgid ""
+"Note : Single-site packages are disabled. Only multisite-compatible packages "
+"can be restored from the backup directory."
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:253
+msgid ""
+"Note : Multisite packages are disabled. Only single-site packages can be "
+"restored from the backup directory."
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:267
+msgid "Single-site package cannot be restored to this multisite."
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:269
+msgid "Multisite package cannot be restored to this single-site."
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:300
+msgid "Please select from the following backups"
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:353
+msgid "Created on"
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:357
+#, php-format
+msgid "Non-encrypted %s package"
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:359
+#, php-format
+msgid "Encrypted %s package"
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:376
+#, php-format
+msgid "Copy zip URL and paste to any remote WordPress %s to restore."
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:380
+msgid "Delete this backup zip"
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:398
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:405
+msgid "multisite"
+msgstr ""
+
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:400
+#: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxImportHelpers.php:403
+msgid "single-site"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxDeleteTemp.php:133
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBox.php:210
+msgid "Blog ID not set"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxDeleteTemp.php:163
+#, php-format
+msgid "Clear files of blog ID : %d"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxDeleteTemp.php:194
+msgid "Blog id not set"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxDeleteTemp.php:234
+msgid "No files to delete"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxDeleteTemp.php:236
+msgid "Done."
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxDeleteTemp.php:237
+msgid "No more files to delete"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxDeleteTemp.php:245
+msgid "Delete all backups for this blog using this button"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxDeleteTemp.php:249
+msgid "Delete all files"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBox.php:214
+msgid "Filepath not set"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBox.php:224
+msgid "Unauthorized file path"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:252
+msgid ""
+"The network connection to the Ajax controller is lost. Sometimes this error "
+"is temporary and will resolve by itself."
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:253
+#, php-format
+msgid ""
+"To quickly resolve this, try again by clearing your browser cache and %s."
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:254
+msgid "restore one site at a time"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:256
+msgid ""
+"In some situations, this error can be caused by server timeouts (e.g. Apache "
+"TimeOut Directive) or simply slow connection to the package URL."
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:257
+msgid ""
+"In this case, it is recommended to restore one site at a time to avoid "
+"reaching this timeout."
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:323
+msgid "Package URL not set or invalid"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:332
+msgid "Invalid URL provided"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:340
+msgid "Verifying package.."
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:463
+msgid ""
+"Are you sure you want to delete {{FILENAMEPLACEHOLDER}} ? This cannot be "
+"undone."
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:464
+msgid ""
+"Are you sure you want to delete all files for blog ID : {{BLOGIDPLACEHOLDER}}"
+" ? This cannot be undone."
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:467
+msgid "Server busy, please wait for a moment.."
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:468
+msgid "Service unavailable, please cancel and try again later."
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:501
+#, php-format
+msgid "Restore Options %s"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:506
+msgid "Restore files from this site backup directory"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:517
+msgid "Restore backup zip from a remote URL"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:529
+msgid "Upload zip package from your computer"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:535
+msgid "Browse..."
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:544
+msgid "Please set complete restore options"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:599
+msgid "Restore blog ID"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxExport.php:128
+msgid "Copied to Clipboard!"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxExport.php:132
+#, php-format
+msgid "You can now paste using Prime Mover %s - %s in your target site."
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxExport.php:133
+msgid "Restore Site"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxExport.php:151
+msgid "Copy URL to clipboard"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxExport.php:272
+msgid "Export location"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxExport.php:274
+#, php-format
+msgid "Export zip to this blog %s so it can be restored immediately."
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxExport.php:294
+msgid "Data encryption"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxExport.php:298
+msgid "database"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxExport.php:300
+msgid "database & media files"
+msgstr ""
+
+#: engines/prime-mover-gearbox/app/PrimeMoverGearBoxExport.php:303
+#, php-format
+msgid "Encrypt %s with industry standard AES-256 encryption"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"The complete migration solution for moving single-site to multisite platform "
+"and vice versa. This can also be used to migrate single-site to another "
+"single-site install or multisite subsite to another multisite subsite "
+"install."
+msgstr ""
+
+#. URI of the plugin
+msgid "https://codexonics.com/"
+msgstr ""
+
+#. Author of the plugin
+msgid "Codexonics"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https:/codexonics.com/"
+msgstr ""

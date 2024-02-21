@@ -1,0 +1,105 @@
+.prime-mover-setting-description {
+	margin-top: 5px;
+}
+.prime-mover-setting-description .p_wrapper_prime_mover_setting {
+	margin-top: 10px;
+}
+.prime_mover_settings_spinner img {
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.form-table .prime_mover_settings_spinner {
+   margin-left: 6px;
+   padding: 6px;
+   margin-top: 15px;
+   margin-bottom: 0px;
+}
+.form-table .prime-mover-authentication-instructions {
+	margin-top: 15px;
+}
+.form-table .prime-mover-deleteall-button, .ui-dialog .prime-mover-deleteall-button, .form-table .prime-mover-deleteall-button:hover {
+    background: orangered;
+    color: white;
+    border-radius: 5px;
+    border-color: orangered;
+}
+.form-table .prime-mover-deleteall-button:hover, .ui-dialog .prime-mover-deleteall-button:hover {
+    background: red;
+    color: white;
+    border-radius: 5px;
+    border-color: orangered;
+}
+
+.prime-mover-setting-description .prime-mover-settings-paragraph {
+	margin-top: 15px;
+}
+
+.conceal-authorization-keys {
+  font-family: 'text-security-disc';
+}
+
+.prime-mover-setting-description .prime-mover-settings-long-paragraph {
+	margin-top: 30px;
+}
+
+.prime_mover_panel_backup_dir_title {
+	text-decoration: underline;
+}
+.prime-mover-exclusion-uploads-example span {
+	font-weight: 430;
+	font-style: italic;
+}
+.prime-mover-clipboard-key-confirmation {
+	margin-left: 5px;
+	display: none;
+}
+.prime-mover-activated-plugins-helper {
+	display: none;
+}
+.prime-mover-setting-description .prime-mover-autogenerate-key {
+	margin-bottom: 10px;
+}
+.form-table .prime-mover-settings-doc-link {
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+.form-table .prime-mover-upgrade-button-simple,
+.form-table .prime-mover-upgrade-button-simple:hover
+ {
+    color: #ffffff;
+    background-color: #29ABE1;
+    box-shadow: inset 0 -5px 0 rgba(0,0,0,0.1);
+    border: none; 		
+    white-space: normal;
+	height: auto;
+}
+.form-table .prime-mover-cart-dashicon {
+    vertical-align: middle;
+    padding-bottom: 5px;
+    margin-right: 5px;
+}
+.form-table .prime_mover_pro_class_heading_table {
+	color: #2271b1;
+	margin-top: 7px;
+	font-weight: 400;
+	font-size:12px;
+}
+.form-table .prime-mover-dashicons-lock {
+	margin-right: 0px;
+	color: skyblue;
+	font-size:17px;
+}
+.form-table .prime-mover-settings-doc-link a {
+	font-style:italic;
+	font-weight: 500;
+}
+.prime-mover-user-dialog .ui-dialog-titlebar {
+	background: #29ABE1;
+	color: rgba(255,255,255,0.87);
+}
+.prime-mover-user-dialog .ui-dialog-titlebar-close {
+	color: rgba(255,255,255,0.87);
+}
+.prime_mover_gdrive_logout_link {
+	margin-left: 7px;
+}
