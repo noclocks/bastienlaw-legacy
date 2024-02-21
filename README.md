@@ -7,6 +7,12 @@
 
 ## Overview
 
+- React Based Website is under `src/` directory with `public/` as the root directory of the website.
+- Legacy HTML/CSS/JS Website is under `ref/legacy/` directory with separate folders for each page and `index.htm` files.
+- Notes and documentation are under `docs/` directory.
+
+## Documentation
+
 - [Pricing](docs/pricing.md)
 - [Website Migration](docs/migration.md)
 - [FindLaw Escape](docs/findlaw.md)
