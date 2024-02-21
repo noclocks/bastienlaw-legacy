@@ -36,3 +36,116 @@
     transform: rotate(360deg);
   }
 }
+
+.mobile_nav.closed .et_mobile_menu {
+  display: none;
+}
+
+.nav li.et-hover>ul,
+.menu li.et-hover>ul {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.da11y-submenu-show {
+  visibility: visible !important;
+}
+
+#et_search_icon {
+  border: inherit;
+  background: inherit;
+}
+
+.et-search-field {
+  padding-right: 60px;
+}
+
+.et_close_search_field {
+  display: block;
+  width: 30px;
+  height: 30px;
+  z-index: 99999;
+  position: absolute;
+  right: 60px;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+button.et_close_search_field {
+  background: inherit;
+  border: inherit;
+}
+
+.et_close_search_field:after {
+  font-family: 'ETmodules';
+  content: '\4d';
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 17px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.et-search-form button[type='submit'] {
+  display: block;
+  width: 30px;
+  height: 30px;
+  z-index: 99999;
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: inherit;
+  border: inherit;
+}
+
+.et-search-form button[type='submit']:after {
+  font-family: 'ETmodules';
+  content: '\55';
+  font-size: 17px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.da11y-screen-reader-text,
+.et_pb_contact_form_label,
+.widget_search .screen-reader-text,
+.et_pb_search .screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: normal;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.da11y-screen-reader-text:focus {
+  background: #f1f1f1;
+  color: #00547A;
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, .6);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, .6);
+  clip: auto !important;
+  display: block;
+  height: auto;
+  left: 5px;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 7px;
+  width: auto;
+  z-index: 1000000;
+}
